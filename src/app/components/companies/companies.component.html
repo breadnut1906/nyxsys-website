@@ -1,0 +1,12 @@
+
+<section class="company-section">
+    <div class="company-wrapper">
+        <div class="logos">
+            <div class="logo-slide">
+                @for (item of imageIndex; track $index) {
+                    <img [src]="'assets/images/companies/' + item.id + '.png'" [alt]="item.id + '.png'" loading="lazy">
+                }
+            </div>
+        </div>
+    </div>
+</section>
