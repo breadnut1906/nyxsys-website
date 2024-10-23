@@ -7,10 +7,10 @@
   width: 100%;
   background-color: transparent; 
   transition: background-color 0.3s ease;
-  z-index: 2;
+  z-index: 99;
 
   &.scrolled {
-    background-color: rgba($color: #002868, $alpha: 0.9);
+    background-color: rgba($color: #002868, $alpha: 1.0);
     transition: background-color 0.3s ease;
   }
 
