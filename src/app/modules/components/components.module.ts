@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { CompaniesComponent } from '../../components/companies/companies.component';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
-import { AboutInfoComponent } from '../../components/about-info/about-info.component';
+import { AboutSectionComponent } from '../../components/about-section/about-section.component';
 import { DrivingForceSectionComponent } from '../../components/driving-force-section/driving-force-section.component';
+import { ServicesSectionComponent } from '../../components/services-section/services-section.component';
+import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
 
 
 
@@ -13,17 +15,21 @@ import { DrivingForceSectionComponent } from '../../components/driving-force-sec
   imports: [
     CommonModule,
     NavbarComponent,
-    AboutInfoComponent,
+    AboutSectionComponent,
     DrivingForceSectionComponent,
+    ServicesSectionComponent,
     CompaniesComponent,
+    TestimonialsComponent,
     FooterComponent
   ],
   exports: [
     CommonModule,
     NavbarComponent,
-    AboutInfoComponent,
+    AboutSectionComponent,
     DrivingForceSectionComponent,
+    ServicesSectionComponent,
     CompaniesComponent,
+    TestimonialsComponent,
     FooterComponent
   ]
 })

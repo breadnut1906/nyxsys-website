@@ -1,5 +1,9 @@
 .company-section {
-    padding: 20px auto;
+    font-family: 'Poppins', Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 5% 3%;
 
     .company-wrapper {
         margin: 40px auto;
@@ -7,6 +11,7 @@
         .logos {
             position: relative;
             overflow: hidden;
+            margin-top: 5%;
             padding: 60px auto;
             white-space: nowrap;
 

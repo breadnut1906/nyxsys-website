@@ -1,1 +1,18 @@
-<p>testimonials works!</p>
+<div class="testimonial-section">
+    <div class="testimonial-container">
+        <div class="testimonial-wrapper">
+            <ngx-slick-carousel
+                class="testimonial-slider"
+                [config]="config"
+            >
+                <div *ngFor="let testimonial of testimonials" slickSlide>
+                    <div class="testimonial slide" ngxSlickItem>
+                        <p class="message">{{ testimonial.message }}</p>
+                            <h4 class="name">{{ testimonial.name }}</h4>
+                        <p class="position">{{ testimonial.position }}</p>
+                    </div>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+    </div>
+</div>

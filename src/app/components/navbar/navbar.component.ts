@@ -18,8 +18,8 @@ export class NavbarComponent implements OnDestroy {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    this.isScrolled = scrollPosition > 50;  // Set threshold to trigger the background change
+    const heroSection = document.querySelector('.hero-section')?.clientHeight || 0;
+    this.isScrolled = window.scrollY > heroSection;
   }
 
   constructor(public utility: UtilityService) {
