@@ -18,7 +18,7 @@ footer {
         }
 
         .footer-quick-links {
-            margin: 0;
+            margin: 24px 0;
             padding: 0;
             list-style: none;
         
@@ -44,26 +44,27 @@ footer {
             }
         }
 
-        .footer-container {
+        .footer-contacts {
+            margin: 24px 0;
             display: flex;
             flex-direction: column;
             gap: 15px;
 
-            .footer-content-item {
+            .footer-contacts-item {
                 display: flex;
                 flex-direction: row;
                 gap: 12px;
-                min-width: 100%; /* Ensures that there's enough width for the entire row */
+                min-width: 100%;
 
                 .mat-icon {
-                    padding-right: 20px; /* Adds some space between the icon and the text */
+                    padding-right: 20px;
                 }
             }
         }
 
         .footer-socials {
+            margin: 24px 0;
             display: flex;
-            justify-content: center;
             gap: 15px;
 
             a {
@@ -71,8 +72,9 @@ footer {
                 font-size: 24px;
                 text-decoration: none;
 
-                &:hover {
-                    color: #ffcc00; /* Change to your preferred hover color */
+                img {
+                    filter: brightness(0) invert(1);
+                    height: 20px;
                 }
             }
         }

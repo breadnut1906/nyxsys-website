@@ -7,7 +7,7 @@
                     <div class="footer-socials">
                         @for (item of socialLinks; track $index) {
                             <a [href]="item.url" target="_blank" rel="noopener noreferrer">
-                                <mat-icon>{{ item.icon }}</mat-icon>
+                                <img [src]="'assets/icons/' + item.icon + '.png'" [alt]="item.icon">
                             </a>
                         }
                     </div>
@@ -23,16 +23,16 @@
                 </div>
                 <div class="col-12 col-lg-3">
                     <h3>Contacts</h3>
-                    <div class="footer-container">
-                        <div class="footer-content-item">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-item">
                             <mat-icon>mail</mat-icon>
                             <p>{{ emailAddress }}</p>
                         </div>
-                        <div class="footer-content-item">
+                        <div class="footer-contacts-item">
                             <mat-icon>location_on</mat-icon>
                             <p>{{ address }}</p>
                         </div>
-                        <div class="footer-content-item">
+                        <div class="footer-contacts-item">
                             <mat-icon>phone</mat-icon>
                             <p>{{ phone }}</p>
                         </div>

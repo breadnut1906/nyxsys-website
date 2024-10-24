@@ -13,10 +13,9 @@ export class FooterComponent {
   address: string = 'G/F Paragon Plaza Bldg., 162 EDSA cor. Reliance St., Mandaluyong City, PH';
   phone: string = '(02) 8687 0503 loc. 310';
 
-
   socialLinks = [
     { name: 'Facebook', url: 'https://www.facebook.com', icon: 'facebook' },
-    { name: 'Instagram', url: 'https://www.instagram.com', icon: 'insta' },
+    { name: 'Instagram', url: 'https://www.instagram.com', icon: 'instagram' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com', icon: 'linkedin' },
   ];
 }
