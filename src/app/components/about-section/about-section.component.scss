@@ -6,7 +6,6 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding: 10% 3%;
 
     .about-wrapper {
         position: relative;
@@ -14,6 +13,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 50px;
 
         .left-content {
             flex: 1;
@@ -31,11 +31,7 @@
             flex: 1;
 
             h2 {
-                font-size: 2.3rem;
-                line-height: 2.3rem;
-                font-weight: 700;
-                margin-bottom: 20px;
-                color: #F58F20;
+                color: #F58F20 !important;
             }
 
             button {

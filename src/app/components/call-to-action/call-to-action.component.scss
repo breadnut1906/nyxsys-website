@@ -5,7 +5,7 @@
         width: 100%;
         max-height: 400px;
         object-fit: cover;
-        background: url('/assets/images/about.png');
+        background: url('/assets/images/cta.png');
         background-attachment: fixed;  // This creates the parallax effect
         background-size: cover;
         background-position: center;
@@ -15,20 +15,31 @@
             padding: 5%;
             color: #fafafa;
 
-            h2 {
-                margin: 0;
-                font-size: 3rem;
-                line-height: 3.5rem;
+            .header {
 
                 span {
                     color: #F58F20;
                 }
             }
 
-            button {
-                padding: 8%;
-                font-size: 1.2rem;
-            }
+            // button {
+            //     padding: 9% 8%;
+            //     font-size: 1.2rem;
+            // }
         }
+    }
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media (max-width: 767px) {
+    .header {
+        text-align: center;
+    }
+}
+
+/* Tablet Styles (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px)  {
+    .header {
+        text-align: center;
     }
 }
