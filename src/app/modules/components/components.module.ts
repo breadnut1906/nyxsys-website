@@ -7,6 +7,7 @@ import { AboutSectionComponent } from '../../components/about-section/about-sect
 import { DrivingForceSectionComponent } from '../../components/driving-force-section/driving-force-section.component';
 import { ServicesSectionComponent } from '../../components/services-section/services-section.component';
 import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
+import { CallToActionComponent } from '../../components/call-to-action/call-to-action.component';
 
 
 
@@ -20,6 +21,7 @@ import { TestimonialsComponent } from '../../components/testimonials/testimonial
     ServicesSectionComponent,
     CompaniesComponent,
     TestimonialsComponent,
+    CallToActionComponent,
     FooterComponent
   ],
   exports: [
@@ -30,6 +32,7 @@ import { TestimonialsComponent } from '../../components/testimonials/testimonial
     ServicesSectionComponent,
     CompaniesComponent,
     TestimonialsComponent,
+    CallToActionComponent,
     FooterComponent
   ]
 })

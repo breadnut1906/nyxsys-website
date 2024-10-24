@@ -1,14 +1,15 @@
 <div class="testimonial-section">
     <div class="testimonial-container">
         <div class="testimonial-wrapper">
-            <ngx-slick-carousel class="testimonial-slider" [config]="config">
-                <div *ngFor="let testimonial of testimonials" slickSlide>
-                    <div class="testimonial slide" ngxSlickItem>
-                        <p class="message">{{ testimonial.message }}</p>
-                        <h4 class="name">{{ testimonial.name }}</h4>
-                        <p class="position">{{ testimonial.position }}</p>
+            <h2>Testimonials</h2>
+            <ngx-slick-carousel  #slickModal="slick-carousel" class="testimonial-slider" [config]="config">
+                @for (item of testimonials; track $index) {
+                    <div class="testimonial-item slide" ngxSlickItem>
+                        <img class="testimonial-item-quote" src="assets/icons/quote.png" alt="Quote">
+                        <img [src]="item.image" [alt]="item.name">
+                        <p class="message">{{ item.message }}</p>
                     </div>
-                </div>
+                }
             </ngx-slick-carousel>
         </div>
     </div>

@@ -37,3 +37,28 @@ $nyxsys-website-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: "Poppins", "Roboto", sans-serif; }
+
+section {
+  font-family: 'Poppins', Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 10% 3%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  font-family: 'Poppins', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba($color: #002868, $alpha: 1.0);
+  padding: 10% 3% 12px;
+  color: #fafafa;
+}

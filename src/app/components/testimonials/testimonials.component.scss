@@ -15,34 +15,37 @@
         z-index: 1;
 
         .testimonial-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: auto 20px;
+            position: relative;
+            text-align: center;
             
-            .testimonial {
-                padding: 20px;
+            h2 {
+                font-size: 2.3rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
+            }
+            
+            .testimonial-item {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 32px;
+                margin: 0 26px;
                 text-align: center;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                background-color: #f9f9f9;
+
+                img {
+                    width: 200px;
+                    margin-bottom: 32px;
+                    background-attachment: #fafafa;
+                }
+
+                .testimonial-item-quote {
+                    padding: 0;
+                    margin: 0;
+                    width: 50px;
+                }
             }
-            
-            .message {
-                font-style: italic;
-                margin-bottom: 10px;
-            }
-            
-            .name {
-                font-weight: bold;
-                margin: 5px 0;
-            }
-            
-            .position {
-                color: gray;
-            }
-            
         }
     }
 }

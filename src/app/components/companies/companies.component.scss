@@ -6,6 +6,7 @@
     padding: 5% 3%;
 
     .company-wrapper {
+        text-align: center;
         margin: 40px auto;
         
         .logos {
@@ -64,6 +65,6 @@
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-250%);
     }
 }
