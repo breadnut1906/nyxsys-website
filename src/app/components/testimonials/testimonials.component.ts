@@ -18,9 +18,10 @@ export class TestimonialsComponent {
     dots: true, 
     infinite: true, 
     speed: 2500, 
-    autoplay: true,
+    // autoplay: true,
     centerMode: true,
-    mobileFirst: true
+    mobileFirst: true,
+    slidesToShow: 1,
   };
 
   testimonials: Testimonial[] = [
