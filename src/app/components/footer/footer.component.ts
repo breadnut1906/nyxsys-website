@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [ MaterialUiModule ],
+  imports: [ MaterialUiModule, RouterModule ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

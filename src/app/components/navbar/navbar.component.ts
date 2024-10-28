@@ -2,11 +2,12 @@ import { Component, HostListener, OnDestroy } from '@angular/core';
 import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
 import { Subject } from 'rxjs';
 import { UtilityService } from '../../services/utility.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [ MaterialUiModule ],
+  imports: [ MaterialUiModule, RouterModule ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })

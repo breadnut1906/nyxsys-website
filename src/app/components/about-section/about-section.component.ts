@@ -1,11 +1,12 @@
 import { Component, HostListener } from '@angular/core';
 import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-about-section',
   standalone: true,
-  imports: [ MaterialUiModule ],
+  imports: [ MaterialUiModule, RouterModule ],
   templateUrl: './about-section.component.html',
   styleUrl: './about-section.component.scss',
   animations: [
