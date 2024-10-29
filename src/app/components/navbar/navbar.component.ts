@@ -3,11 +3,12 @@ import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
 import { Subject } from 'rxjs';
 import { UtilityService } from '../../services/utility.service';
 import { Router, RouterModule } from '@angular/router';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [ MaterialUiModule, RouterModule ],
+  imports: [ MaterialUiModule, RouterModule, NgOptimizedImage  ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })

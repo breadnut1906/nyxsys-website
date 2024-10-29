@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+
+<section class="section-container led-section">
+    <img class="led-image" src="assets/images/cta.png" alt="led" loading="lazy">
+    <div class="led-container">
+        <div class="led-wrapper">
+            <h1 class="led-header led-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">LED Media Inventories</h1>
+            <p class="led-subheader led-item" [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
+                Maximize your brand visibility with Nyxsys's high-impact LED media inventories, strategically located for optimal exposure.
+            </p>
+        </div>
+    </div>
+</section>
+
+<app-companies></app-companies>
+
+<app-testimonials></app-testimonials>
+
+<app-call-to-action></app-call-to-action>
+
+<app-footer></app-footer>

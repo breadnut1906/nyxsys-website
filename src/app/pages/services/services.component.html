@@ -1,18 +1,14 @@
 <app-navbar></app-navbar>
 
 <section class="section-container services-section">
-    <img class="services-image" src="assets/images/services/services-bg.png" alt="Services" loading="lazy">
+    <img class="services-image" src="assets/images/services-bg.png" alt="Services" loading="lazy">
     <div class="services-container">
         <div class="services-wrapper">
-            <div class="services-container">
-                <div class="services-wrapper">
-                    <h1 class="services-header services-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">Our Services</h1>
-                    <p class="services-subheader services-item" [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
-                        We specialize in comprehensive digital advertising solutions, including LED billboard media,
-                        static inventories, technology intergration, data analytics and content management.
-                    </p>
-                </div>
-            </div>
+            <h1 class="services-header services-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">Our Services</h1>
+            <p class="services-subheader services-item" [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
+                We specialize in comprehensive digital advertising solutions, including LED billboard media,
+                static inventories, technology intergration, data analytics and content management.
+            </p>
         </div>
     </div>
 </section>
