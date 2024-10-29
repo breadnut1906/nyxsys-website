@@ -8,6 +8,8 @@ import { DrivingForceSectionComponent } from '../../components/driving-force-sec
 import { ServicesSectionComponent } from '../../components/services-section/services-section.component';
 import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
 import { CallToActionComponent } from '../../components/call-to-action/call-to-action.component';
+import { GallerySectionComponent } from '../../components/gallery-section/gallery-section.component';
+import { WhyChooseUsSectionComponent } from '../../components/why-choose-us-section/why-choose-us-section.component';
 
 
 
@@ -22,7 +24,9 @@ import { CallToActionComponent } from '../../components/call-to-action/call-to-a
     CompaniesComponent,
     TestimonialsComponent,
     CallToActionComponent,
-    FooterComponent
+    FooterComponent,
+    GallerySectionComponent,
+    WhyChooseUsSectionComponent,
   ],
   exports: [
     CommonModule,
@@ -33,7 +37,9 @@ import { CallToActionComponent } from '../../components/call-to-action/call-to-a
     CompaniesComponent,
     TestimonialsComponent,
     CallToActionComponent,
-    FooterComponent
+    FooterComponent,
+    GallerySectionComponent,
+    WhyChooseUsSectionComponent,
   ]
 })
 export class ComponentsModule { }

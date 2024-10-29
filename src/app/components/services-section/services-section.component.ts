@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
 import { RouterLink } from '@angular/router';
 
@@ -7,9 +8,19 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [ MaterialUiModule, RouterLink ],
   templateUrl: './services-section.component.html',
-  styleUrl: './services-section.component.scss'
+  styleUrl: './services-section.component.scss',
+  animations: [
+    trigger('slideIn', [
+      state('hidden', style({ opacity: 0, transform: 'translateY(100px)' })),
+      state('visible', style({ opacity: 1, transform: 'translateY(0)' })),
+      transition('hidden => visible', animate('600ms ease-out')),
+      // transition('visible => hidden', animate('600ms ease-in')),
+    ]),
+  ],
 })
 export class ServicesSectionComponent {
+
+  isVisible: boolean[] = [ false, false, false, false ];
 
   services: any[] = [
     {
@@ -37,4 +48,18 @@ export class ServicesSectionComponent {
       routerLink: '/services/audience'
     }
   ]
+  
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const elements = document.querySelectorAll('.service-item');      
+    
+    elements.forEach((element, index) => {  
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      if (rect.top <= windowHeight && rect.bottom >= 0) {
+        setTimeout(() => (this.isVisible[index] = true), index * 300); // 300ms delay for each div
+      }
+    })
+  }
 }

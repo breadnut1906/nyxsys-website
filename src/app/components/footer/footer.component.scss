@@ -1,4 +1,7 @@
 footer {
+    h3 {
+        font-family: 'Poppins', Arial, sans-serif !important;
+    }
 
     .wrapper {
 
@@ -65,7 +68,7 @@ footer {
         .footer-socials {
             margin: 24px 0;
             display: flex;
-            gap: 15px;
+            gap: 20px;
 
             a {
                 color: white;

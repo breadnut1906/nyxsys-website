@@ -2,7 +2,7 @@ import { Component, HostListener, OnDestroy } from '@angular/core';
 import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
 import { Subject } from 'rxjs';
 import { UtilityService } from '../../services/utility.service';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -23,7 +23,7 @@ export class NavbarComponent implements OnDestroy {
     this.isScrolled = window.scrollY > heroSection;
   }
 
-  constructor(public utility: UtilityService) {
+  constructor(public utility: UtilityService, public router: Router) {
     utility.isMobile(this.destroyed).subscribe({ next: (value: boolean) => {
       this.isMenuOpen = false;
     }})

@@ -1,3 +1,7 @@
+h2 {
+    font-family: 'Poppins', Arial, sans-serif !important;
+}
+
 .wrapper {
     position: relative;
     
@@ -16,16 +20,19 @@
             color: #fafafa;
 
             .header {
+                margin: 0 !important;
+                padding: 0 !important;
+                line-height: 1.2 !important;
 
                 span {
                     color: #F58F20;
                 }
             }
 
-            // button {
-            //     padding: 9% 8%;
-            //     font-size: 1.2rem;
-            // }
+            button {
+                padding: 1.5rem;
+                text-transform: uppercase;
+            }
         }
     }
 }
