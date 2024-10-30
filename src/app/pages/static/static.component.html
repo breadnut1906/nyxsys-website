@@ -1,1 +1,17 @@
-<p>static works!</p>
+<app-navbar></app-navbar>
+
+<section class="section-container static-section">
+    <img class="static-image" src="assets/images/cta.png" alt="static" loading="lazy">
+    <div class="static-container">
+        <div class="static-wrapper">
+            <h1 class="static-header static-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">Static Fixed Inventories</h1>
+            <p class="static-subheader static-item" [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
+                Ensure consistent brand exposure with Nyxsys Static Fixed Invetories, delivaring impactful, visibility at key location.
+            </p>
+        </div>
+    </div>
+</section>
+
+<app-see-more-services-section></app-see-more-services-section>
+
+<app-footer></app-footer>

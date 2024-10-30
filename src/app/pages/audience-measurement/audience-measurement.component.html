@@ -1,1 +1,21 @@
-<p>audience-measurement works!</p>
+<app-navbar></app-navbar>
+
+<section class="section-container audience-section">
+    <img class="audience-image" src="assets/images/cta.png" alt="audience" loading="lazy">
+    <div class="audience-container">
+        <div class="audience-wrapper">
+            <h1 class="audience-header audience-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">
+                Audience Measurement Enabled by Calton Datx
+            </h1>
+            <p class="audience-subheader audience-item" [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
+                Unlock the power of data-driven insights to understand your audience like never before. Our cutting-edge tools and 
+                analytics help you capture real-time engagement metrics, 
+                enabling precise targeting and enhanced campaign effectiveness.
+            </p>
+        </div>
+    </div>
+</section>
+
+<app-see-more-services-section></app-see-more-services-section>
+
+<app-footer></app-footer>

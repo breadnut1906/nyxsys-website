@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -7,4 +8,17 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {  }
+export class AppComponent implements OnInit { 
+  constructor(
+    private router: Router,
+    private viewportScroller: ViewportScroller
+  ) {}
+
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.viewportScroller.scrollToPosition([0, 0]);
+      }
+    });
+  }
+}

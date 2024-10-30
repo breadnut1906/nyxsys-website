@@ -28,7 +28,7 @@ export class GallerySectionComponent {
       const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
       if (rect.top <= windowHeight && rect.bottom >= 0) {
-        setTimeout(() => (this.isVisible[index] = true), index * 300); 
+        setTimeout(() => (this.isVisible[index] = true), index * 200); 
       }
     })
   }

@@ -28,6 +28,7 @@ h2 {
         z-index: 1;
 
         .led-wrapper {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -56,18 +57,51 @@ h2 {
     }
 }
 
+.led-services {
 
-/* Media Queries */
-/* Mobile Styles (max-width: 767px) */
-@media (max-width: 767px) {
-    .led-section {
-        height: 80vh;
+    h2 {
+        font-size: 2.3rem !important;
+        font-weight: 700;
     }
-}
 
-/* Tablet Styles (min-width: 768px and max-width: 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .led-section {
-        height: 80vh;
+    .led-content {
+        position: relative;
+        padding: 5%;
+        min-height: 500px;
+    
+        .led-content-text, img {
+            position: absolute;
+            left: 0;
+            border-radius: 10px;
+        }
+    
+        img {
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -2;
+            object-fit: cover;
+        }
+    
+        .led-content-text {
+            bottom: 0;
+            padding: 2% 5%;
+    
+            h4 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .led-content-overlay {
+            width: 100%;
+            color: #fafafa;
+            background: linear-gradient(to top, #000, rgba($color:#fff, $alpha: 0));
+
+            
+            h4 {
+                font-weight: 700;
+            }
+        }
     }
 }

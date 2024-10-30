@@ -12,10 +12,51 @@
     </div>
 </section>
 
-<app-companies></app-companies>
+<section class="section-container led-services">
+    <img src="assets/images/graphics/dots.png" class="img-top-right-corner" alt="Dots" loading="lazy">
+    <div class="led-container">
+        <div class="led-wrapper" style="margin-bottom: 10%;">
+            <h2>LED Inventories</h2>
+            <div class="row g-3 mt-2">
+                @for (item of ledInventories; track $index) {
+                    <div class="col-12 col-lg-4">
+                        <div class="led-content">
+                            <img [src]="item.image" [alt]="item.image">
+                            <div class="led-content-text led-content-overlay">
+                                <h4>{{ item.text }}</h4>
+                                <p>{{ item.address }}</p>
+                                <p>{{ item.size }}</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="led-wrapper">
+            <h2>Mall Posterboxes</h2>
+            <mat-tab-group [dynamicHeight]="true" mat-stretch-tabs>
+                @for (item of mallPosterboxes; track $index) {
+                    <mat-tab [label]="item.text">
+                        <div class="row g-3 mt-2">
+                            @for (childItem of item.items; track $index) {
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="led-content">
+                                        <img [src]="childItem.image" [alt]="childItem.image">
+                                        <div class="led-content-text led-content-overlay">
+                                            <h4>{{ childItem.text }}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </mat-tab>
+                }
+            </mat-tab-group>
+        </div>
+    </div>
+    <img src="assets/images/graphics/dots.png" class="img-bottom-left-corner" alt="Dots" loading="lazy">
+</section>
 
-<app-testimonials></app-testimonials>
-
-<app-call-to-action></app-call-to-action>
+<app-see-more-services-section></app-see-more-services-section>
 
 <app-footer></app-footer>

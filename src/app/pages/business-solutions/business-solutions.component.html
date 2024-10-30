@@ -1,1 +1,19 @@
-<p>business-solutions works!</p>
+<app-navbar></app-navbar>
+
+<section class="section-container business-solution-section">
+    <img class="business-solution-image" src="assets/images/cta.png" alt="business-solution" loading="lazy">
+    <div class="business-solution-container">
+        <div class="business-solution-wrapper">
+            <h1 class="business-solution-header business-solution-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">
+                Business Innovative Solutions & Services
+            </h1>
+            <p class="business-solution-subheader business-solution-item" [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
+                Empowering your business with innovative solutions and services that drive growth and efficiency.
+            </p>
+        </div>
+    </div>
+</section>
+
+<app-see-more-services-section></app-see-more-services-section>
+
+<app-footer></app-footer>

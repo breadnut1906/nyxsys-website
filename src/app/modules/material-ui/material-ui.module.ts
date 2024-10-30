@@ -6,6 +6,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [],
@@ -16,7 +17,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTabsModule,
   ],
   exports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTabsModule,
   ]
 })
 export class MaterialUiModule { }
