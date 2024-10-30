@@ -4,12 +4,41 @@
     <img class="business-solution-image" src="assets/images/cta.png" alt="business-solution" loading="lazy">
     <div class="business-solution-container">
         <div class="business-solution-wrapper">
-            <h1 class="business-solution-header business-solution-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">
-                Business Innovative Solutions & Services
-            </h1>
+            <h1 class="business-solution-header business-solution-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">Business Innovative Solutions & Services</h1>
             <p class="business-solution-subheader business-solution-item" [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
                 Empowering your business with innovative solutions and services that drive growth and efficiency.
             </p>
+        </div>
+    </div>
+</section>
+
+<section class="section-container business-solution-contents">
+    <img src="assets/images/graphics/dots.png" class="img-top-right-corner" alt="Dots" loading="lazy">
+    <div class="business-solution-container">
+        <div class="business-solution-wrapper">
+            <h2>Digital Signage Case Studies</h2>
+            <p>Real-world success stories showcasing impactful signage solutions across diverse industries.</p>
+            <div class="business-solution-carousel">
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="config">
+                    @for (item of caseStudies; track $index) {
+                        <div class="business-solution-item" ngxSlickItem>
+                            <img [src]="item.image" [alt]="item.title">
+                            <div class="business-solution-overlay">
+                                <div class="business-solution-overlay-text">
+                                    <h4>{{ item.text }}</h4>
+                                    <p>{{  item.details }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </ngx-slick-carousel>
+            </div>
+        </div>
+        <div class="business-solution-wrapper">
+            <h2>Digital Signage End-to-End Solutions</h2>
+        </div>
+        <div class="business-solution-wrapper">
+            <h2>Digital Signage Post Services</h2>
         </div>
     </div>
 </section>

@@ -19,6 +19,7 @@ export class SeeMoreServicesSectionComponent implements OnInit {
   services: any;
   
   config: any = { 
+    arrows: false,
     dots: false, 
     speed: 2000,
     slidesToShow: 2,
