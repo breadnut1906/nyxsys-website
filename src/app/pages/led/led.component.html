@@ -22,10 +22,12 @@
                     <div class="col-12 col-lg-4">
                         <div class="led-content">
                             <img [src]="item.image" [alt]="item.image">
-                            <div class="led-content-text led-content-overlay">
-                                <h4>{{ item.text }}</h4>
-                                <p>{{ item.address }}</p>
-                                <p>{{ item.size }}</p>
+                            <div class="led-content-overlay">
+                                <div class="led-content-text">
+                                    <h4>{{ item.text }}</h4>
+                                    <p>{{ item.address }}</p>
+                                    <p>{{ item.size }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -42,8 +44,10 @@
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="led-content">
                                         <img [src]="childItem.image" [alt]="childItem.image">
-                                        <div class="led-content-text led-content-overlay">
-                                            <h4>{{ childItem.text }}</h4>
+                                        <div class="led-content-overlay">
+                                            <div class="led-content-text">
+                                                <h4>{{ childItem.text }}</h4>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
