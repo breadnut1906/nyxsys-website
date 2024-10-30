@@ -54,6 +54,7 @@
                 line-height: 1.5;
                 margin-top: 1.05rem;
                 padding: 0 5%;
+                margin: 20px 15%;
                 color: #fafafa; /* Adjust color as needed */
             }
 
@@ -89,6 +90,10 @@
     .hero-header {
         margin: 0 !important;
     }
+    
+    .hero-subheader {
+        margin: 20px 0 !important;
+    }
 }
 
 
@@ -102,5 +107,9 @@
 
     .hero-header {
         margin: 0 !important;
+    }
+
+    .hero-subheader {
+        margin: 20px 0 !important;
     }
 }
