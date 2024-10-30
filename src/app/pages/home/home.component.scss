@@ -40,7 +40,7 @@
                 font-weight: bold;
                 line-height: 1.2;
                 letter-spacing: 0.5px;
-                margin: 0;
+                margin: 0 5%;
                 color: #fafafa; /* Adjust color as needed */
 
                 span {
@@ -85,6 +85,10 @@
         text-align: start !important;
         padding: 0 2% !important;
     }
+
+    .hero-header {
+        margin: 0;
+    }
 }
 
 
@@ -94,5 +98,9 @@
         align-items: start !important;
         text-align: start !important;
         padding: 0 2% !important;
+    }
+
+    .hero-header {
+        margin: 0;
     }
 }
