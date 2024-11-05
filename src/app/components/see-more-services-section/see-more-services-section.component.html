@@ -19,7 +19,7 @@
                             <div class="more-service-overlay">
                                 <h4>{{ item.title }}</h4>
                                 <p>{{  item.description }}</p>
-                                <button class="more-services-item-button" [routerLink]="[ item.routerLink ]" color="accent" mat-raised-button>LEARN MORE</button>
+                                <a class="more-services-item-button" [href]="item.routerLink" color="accent" mat-raised-button>LEARN MORE</a>
                             </div>
                         </div>
                     }

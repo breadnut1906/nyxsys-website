@@ -16,7 +16,7 @@
                             <div class="service-item-overlay">
                                 <h4>{{ item.title }}</h4>
                                 <p>{{  item.description }}</p>
-                                <button class="service-item-button" [routerLink]="[ item.routerLink ]" color="accent" mat-raised-button>LEARN MORE</button>
+                                <a class="service-item-button" [href]="item.routerLink" color="accent" mat-raised-button>LEARN MORE</a>
                             </div>
                         </div>
                     </div>
