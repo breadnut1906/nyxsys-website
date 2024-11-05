@@ -25,6 +25,8 @@ export class SeeMoreServicesSectionComponent implements OnInit {
     slidesToShow: 2,
     slidesToScroll: 1,
     infinite: true, 
+    centerMode: true,
+    centerPadding: '60px',
     responsive: [
       {
         breakpoint: 1024,

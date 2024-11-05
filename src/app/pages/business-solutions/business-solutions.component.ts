@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
 import { ComponentsModule } from '../../modules/components/components.module';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-business-solutions',
@@ -19,6 +20,8 @@ import { ComponentsModule } from '../../modules/components/components.module';
   ],
 })
 export class BusinessSolutionsComponent implements OnInit {
+
+  @ViewChild(SlickCarouselComponent) slickModalCaseStudies!: SlickCarouselComponent;
 
   isVisible: boolean[] = [ false, false ];
 
@@ -101,6 +104,8 @@ export class BusinessSolutionsComponent implements OnInit {
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true, 
+    centerMode: true,
+    centerPadding: '60px',
     responsive: [
       {
         breakpoint: 1024,
@@ -125,5 +130,13 @@ export class BusinessSolutionsComponent implements OnInit {
     elements.forEach((element, index) => {  
       setTimeout(() => (this.isVisible[index] = true), index * 300);
     });
+  }
+  
+  onClickPrev() {
+    this.slickModalCaseStudies.slickPrev();
+  }
+
+  onClickNext() {
+    this.slickModalCaseStudies.slickNext();
   }
 }

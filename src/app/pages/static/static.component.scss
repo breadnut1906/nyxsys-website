@@ -64,12 +64,13 @@ h2 {
     .static-content {
         position: relative;
         min-height: 500px;
+        overflow: hidden;
+        border-radius: 8px;
     
         .static-content-text, .static-content-overlay, img {
             position: absolute;
             left: 0;
             width: 100%;
-            border-radius: 8px;
         }
 
         img {
@@ -83,7 +84,7 @@ h2 {
         .static-content-overlay {
             height: 100%;
             color: #fafafa;
-            background: linear-gradient(to top, #002868, rgba($color:#fff, $alpha: 0));
+            background: linear-gradient(to top, #1f1f1f, rgba($color:#fff, $alpha: 0));
 
     
             .static-content-text {
@@ -96,6 +97,14 @@ h2 {
                     font-weight: 700;
                 }
             }
+        }
+
+        & img {
+            transition: transform 0.7s ease;
+        }
+
+        &:hover img {
+            transform: scale(1.2);
         }
     }
 }

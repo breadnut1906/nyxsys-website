@@ -29,7 +29,7 @@ export class UtilityService {
     {
       title: 'AUDIENCE MEASUREMENT',
       description: `Advanced data and analytics platform that empowers businesses with actionable insights derived from real-time data monitoring and analysis.`,
-      image: 'assets/images/audience measurement/indoor mall audience measurement 1.png',
+      image: 'assets/images/audience measurement/indoor/indoor mall audience measurement 1.png',
       routerLink: '/services/audience-measurement'
     }
   ]

@@ -49,47 +49,47 @@ export class LedComponent implements OnInit {
     {
       text: 'Glorietta',
       items: [
-        { text: 'Glorietta 4, Drop-off Entrance', image: 'assets/images/no-image.jpg' },
-        { text: 'Glorietta 3 Drop-off, in front of Steel Parking', image: 'assets/images/no-image.jpg' },
-        { text: 'Glorietta 1 Entrance in front of SM', image: 'assets/images/no-image.jpg' },
-        { text: 'Glorietta 4, Near Activity Center', image: 'assets/images/no-image.jpg' },
-        { text: 'Glorietta 2, Ground fl. Entrance near Holiday Inn', image: 'assets/images/no-image.jpg' },
-        { text: 'Glorietta, Entrance in front of Landmark', image: 'assets/images/no-image.jpg' },
-        { text: 'Glorietta 1, Near True Value', image: 'assets/images/no-image.jpg' },
-        { text: 'Glorietta 4, 2nd fl. beside Havaianas', image: 'assets/images/no-image.jpg' },
-        { text: 'Glorietta 4, Activity Center, Beside Mcdonalds', image: 'assets/images/no-image.jpg' },
+        { text: 'Glorietta, Entrance in front of Landmark', image: 'assets/images/led/mall posterboxes/glorietta/Glorietta, Entrance in front of Landmark.png' },
+        { text: 'Glorietta 1 Entrance in front of SM', image: 'assets/images/led/mall posterboxes/glorietta/Glorietta 1 Entrance in front of SM.png' },
+        { text: 'Glorietta 1, Near True Value', image: 'assets/images/led/mall posterboxes/glorietta/Glorietta 1, Near True Value.png' },
+        { text: 'Glorietta 2, Ground fl. Entrance near Holiday Inn', image: 'assets/images/led/mall posterboxes/glorietta/Glorietta 2, Ground fl. Entrance near Holiday Inn.png' },
+        { text: 'Glorietta 3 Drop-off, in front of Steel Parking', image: 'assets/images/led/mall posterboxes/glorietta/Glorietta 3 Drop-off, in front of Steel Parking.png' },
+        { text: 'Glorietta 4, Drop-off Entrance', image: 'assets/images/led/mall posterboxes/glorietta/Glorietta 4, Drop-off Entrance.png' },
+        { text: 'Glorietta 4, Near Activity Center', image: 'assets/images/led/mall posterboxes/glorietta/Glorietta 4, Near Activity Center.png' },
+        { text: 'Glorietta 4, 2nd fl. beside Havaianas', image: 'assets/images/led/mall posterboxes/glorietta/Glorietta 4, 2nd fl. beside Havaianas.png' },
+        { text: 'Glorietta 4, Activity Center, Beside Mcdonalds', image: 'assets/images/led/mall posterboxes/glorietta/Glorietta 4, Activity Center, Beside Mcdonalds.png' },
       ]
     }, 
     {
       text: 'UP Town Center',
       items: [
-        { text: 'Phase 1 Building in front of Mercado Supermarket', image: 'assets/images/no-image.jpg' },
-        { text: 'Phase 1 Building in front of National Bookstore', image: 'assets/images/no-image.jpg' },
-        { text: 'Phase 1 Building exit beside Pepper Lunch', image: 'assets/images/no-image.jpg' },
-        { text: 'Phase 2 Building 2F in front of Dotonbori', image: 'assets/images/no-image.jpg' },
-        { text: 'Phase 2 Building entrance near Uniqlo', image: 'assets/images/no-image.jpg' },
-        { text: 'Phase 1 Building, 2nd flr. beside Sbarro', image: 'assets/images/no-image.jpg' },
+        { text: 'Phase 1 Building in front of Mercado Supermarket', image: 'assets/images/led/mall posterboxes/uptown center/Phase 1 Building in front of Mercado Supermarket.png' },
+        { text: 'Phase 1 Building in front of National Bookstore', image: 'assets/images/led/mall posterboxes/uptown center/Phase 1 Building in front of National Bookstore.png' },
+        { text: 'Phase 1 Building exit beside Pepper Lunch', image: 'assets/images/led/mall posterboxes/uptown center/Phase 1 Building exit beside Pepper Lunch.png' },
+        { text: 'Phase 1 Building, 2nd flr. beside Sbarro', image: 'assets/images/led/mall posterboxes/uptown center/Phase 1 Building, 2nd flr. beside Sbarro.png' },
+        { text: 'Phase 2 Building 2F in front of Dotonbori', image: 'assets/images/led/mall posterboxes/uptown center/Phase 2 Building 2F in front of Dotonbori.png' },
+        { text: 'Phase 2 Building entrance near Uniqlo', image: 'assets/images/led/mall posterboxes/uptown center/Phase 2 Building entrance near Uniqlo.png' },
       ]
     },
     {
       text: 'Trinoma',
       items: [
-        { text: 'Level 1, Activity Center near Mister Donut', image: 'assets/images/no-image.jpg' },
-        { text: 'Level 2, Near Shoe Salon', image: 'assets/images/no-image.jpg' },
-        { text: 'Level 2, Entrance near Bench Fix', image: 'assets/images/no-image.jpg' },
-        { text: 'Level 2, Food Choices 2', image: 'assets/images/no-image.jpg' },
-        { text: 'Ground Level, North Car Park Drop Off', image: 'assets/images/no-image.jpg' },
-        { text: 'Level 2, Food Choices', image: 'assets/images/no-image.jpg' },
-        { text: 'Level 3, Near Mango', image: 'assets/images/no-image.jpg' },
+        { text: 'Ground Level, North Car Park Drop Off', image: 'assets/images/led/mall posterboxes/trinoma/Ground Level, North Car Park Drop Off.png' },
+        { text: 'Level 1, Activity Center near Mister Donut', image: 'assets/images/led/mall posterboxes/trinoma/Level 1, Activity Center near Mister Donut.png' },
+        { text: 'Level 2, Near Shoe Salon', image: 'assets/images/led/mall posterboxes/trinoma/Level 2, Near Shoe Salon.png' },
+        { text: 'Level 2, Entrance near Bench Fix', image: 'assets/images/led/mall posterboxes/trinoma/Level 2, Entrance near Bench Fix.png' },
+        { text: 'Level 2, Food Choices 2', image: 'assets/images/led/mall posterboxes/trinoma/Level 2, Food Choices 2.png' },
+        { text: 'Level 2, Food Choices', image: 'assets/images/led/mall posterboxes/trinoma/Level 2, Food Choices.png' },
+        { text: 'Level 3, Near Mango', image: 'assets/images/led/mall posterboxes/trinoma/Level 3, Near Mango.png' },
       ]
     },
     {
       text: 'Market Market',
       items: [
-        { text: '2nd Floor in front of MoshiKoshi', image: 'assets/images/no-image.jpg' },
-        { text: '1st floor Activity Center in front of Levi’s', image: 'assets/images/no-image.jpg' },
-        { text: 'Ground Floor beside elevator in front of National Bookstore', image: 'assets/images/no-image.jpg' },
-        { text: 'Drop-off, Entrance from Terminal', image: 'assets/images/no-image.jpg' },
+        { text: 'Ground Floor beside elevator in front of National Bookstore', image: 'assets/images/led/mall posterboxes/market market/Ground Floor beside elevator in front of National Bookstore.png' },
+        { text: '1st floor Activity Center in front of Levi’s', image: 'assets/images/led/mall posterboxes/market market/1st floor Activity Center in front of Levi’s.png' },
+        { text: '2nd Floor in front of MoshiKoshi', image: 'assets/images/led/mall posterboxes/market market/2nd Floor in front of MoshiKoshi.png' },
+        { text: 'Drop-off, Entrance from Terminal', image: 'assets/images/led/mall posterboxes/market market/Drop-off, Entrance from Terminal.png' },
       ]
     }
   ]
