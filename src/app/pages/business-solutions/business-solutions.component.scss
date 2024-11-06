@@ -7,7 +7,7 @@ h2 {
 .business-solution-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
 
     .business-solution-image {
@@ -33,10 +33,10 @@ h2 {
             position: relative;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 10%;
+            // align-items: center;
+            // justify-content: center;
+            // text-align: center;
+            // padding: 0 10%;
 
             .business-solution-header {
                 font-family: 'Poppins', Arial, sans-serif !important;
@@ -110,13 +110,118 @@ h2 {
             }
         }
     }
+    
+
+    .end-to-end-solutions {
+        padding: 2% 0;
+
+        .end-to-end-solutions-list {
+            margin: 2% 0;
+            padding: 3% 5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            background-color: #F4F1EC;
+            border-radius: 10px;
+            
+            h4, p {
+                margin: 0;
+                padding: 0;
+            }
+
+            .end-to-end-solutions-content {
+                min-width: 400px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 36px;
+
+                h4 {
+                    font-family: 'Poppins', Arial, sans-serif !important;
+                    font-weight: 600;
+                }
+            }
+
+            img {
+                width: 60px;
+            }
+        }
+    }
+}
+
+.post-service-section {
+    color: #fafafa;
+    background-color: #002868;
+
+    .post-service-container {
+        display: flex;
+        flex-direction: row;
+        margin: 5% 0;
+        gap: 32px;
+        height: 100%;
+
+        .post-service-list {
+            display: flex;
+            flex-direction: column;
+
+            .post-service-item {
+                border-radius: 8px;
+                min-width: 200px;
+                overflow: hidden;
+                margin-bottom: 32px;
+        
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                    
+                & img {
+                    transition: transform 0.7s ease;
+                }
+    
+                &:hover img {
+                    transform: scale(1.2);
+                }
+            }
+
+            .post-service-text h4 {
+                font-weight: 600;
+                font-size: 1.05rem !important;
+            }
+        }
+    }
+}
+
+.post-service-impact {
+    text-align: center;
+    margin-top: 8% !important;
+
+    .post-service-impact-contents {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        width: 100%;
+        margin: 5% 0 0 0;
+    }
 }
 
 
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #fafafa;
+    margin-top: 1rem;
+}
 
 /* Media Queries */
 /* Mobile Styles (max-width: 767px) */
 @media (max-width: 767px) {
+
+    .business-solution-section {
+        height: 80vh;
+    }
 
     h2 {
         font-size: 1.5rem !important;
@@ -129,10 +234,23 @@ h2 {
     .business-solution-carousel-buttons {
         justify-content: center !important;
     }
+
+    .end-to-end-solutions-list {
+        flex-direction: column !important;
+
+        .end-to-end-solutions-content {
+            flex-direction: column !important;
+            gap: 16px !important;
+        }
+    }
 }
 
 /* Tablet Styles (min-width: 768px and max-width: 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .business-solution-section {
+        height: 80vh;
+    }
 
     h2 {
         font-size: 2rem !important;
@@ -144,6 +262,15 @@ h2 {
 
     .business-solution-carousel-buttons {
         justify-content: center !important;
+    }
+
+    .end-to-end-solutions-list {
+        flex-direction: column !important;
+
+        .end-to-end-solutions-content {
+            flex-direction: column !important;
+            gap: 16px !important;
+        }
     }
     
 }

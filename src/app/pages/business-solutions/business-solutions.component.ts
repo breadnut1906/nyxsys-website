@@ -94,6 +94,52 @@ export class BusinessSolutionsComponent implements OnInit {
         technology with the sleek design of Japan Town.`,
       image: 'assets/images/no-image.jpg'
     },
+  ];
+
+  e2eSolutions: any[] = [
+    {
+      text: 'Versatile Digital Signage System',
+      details: 'With vcastplay, business owners can creatively display multimedia content like images, videos and websites dynamic marketing',
+      image: 'assets/icons/versatile.png'
+    },
+    {
+      text: 'Content Management Made Efficient',
+      details: 'Vcastplay lets business owners create ad template, schedule airing and customize digital singnage to fit their business needs.',
+      image: 'assets/icons/cms.png'
+    },
+    {
+      text: 'Accessible Easy To Access',
+      details: 'Vcastplay is a cloud-based digital signage system that lets business owners manage multiple players remotely with internet access, anytime, anywhere',
+      image: 'assets/icons/access.png'
+    },
+    {
+      text: 'Support Customer Service',
+      details: 'Customer satisfaction is our priority. Our expert technical team is always available to assist with any digital signage issues',
+      image: 'assets/icons/support.png'
+    },
+    {
+      text: 'Timely Reports',
+      details: 'Vcastplay offers real-time tracking and monitoring reports to ensure your digital signage is running smoothly.',
+      image: 'assets/icons/timely.png'
+    },
+  ];
+
+  postServices: any[] = [
+    {
+      text: 'Social Media',
+      details: 'Handles social media content from planning to performance analysis, ensuring engaging and relevant posts that build your digital presence.',
+      image: 'assets/images/business solutions/post services/social media.png'
+    },
+    {
+      text: 'Creative Creation',
+      details: 'Manages the creative process, delivering eye-catching visuals and content that align with your brand and elevate your marketing efforts.',
+      image: 'assets/images/business solutions/post services/creatives creation.png'
+    },
+    {
+      text: 'Playlist Uploading',
+      details: 'Ensures seamless playlist uploading and scheduling across platforms, making our audio and video content available to your audience effortlessly.',
+      image: 'assets/images/business solutions/post services/playlist uploading.png'
+    },
   ]
   
   config: any = { 

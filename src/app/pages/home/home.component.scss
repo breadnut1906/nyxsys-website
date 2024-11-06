@@ -58,7 +58,7 @@
                 color: #fafafa; /* Adjust color as needed */
             }
 
-            button {
+            a {
                 padding: 1.5rem;
             }
         }
@@ -84,7 +84,7 @@
     .hero-container, .hero-subheader {
         align-items: start !important;
         text-align: start !important;
-        padding: 0 2% !important;
+        padding: 0 !important;
     }
 
     .hero-header {
@@ -102,7 +102,7 @@
     .hero-container, .hero-subheader {
         align-items: start !important;
         text-align: start !important;
-        padding: 0 2% !important;
+        padding: 0 !important;
     }
 
     .hero-header {

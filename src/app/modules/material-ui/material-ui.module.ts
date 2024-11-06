@@ -7,6 +7,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -19,6 +22,10 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatIconModule,
     MatListModule,
     MatTabsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   exports: [
     CommonModule,
@@ -29,6 +36,10 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatIconModule,
     MatListModule,
     MatTabsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
   ]
 })
 export class MaterialUiModule { }

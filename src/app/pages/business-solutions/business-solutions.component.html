@@ -33,19 +33,60 @@
                     }
                 </ngx-slick-carousel>
                 <div class="business-solution-carousel-buttons">
-                    <button (click)="onClickPrev()" mat-mini-fab><mat-icon>keyboard_arrow_left</mat-icon></button>
-                    <button (click)="onClickNext()" mat-mini-fab><mat-icon>keyboard_arrow_right</mat-icon></button>
+                    <button (click)="onClickPrev()" mat-icon-button><mat-icon>keyboard_arrow_left</mat-icon></button>
+                    <button (click)="onClickNext()" mat-icon-button><mat-icon>keyboard_arrow_right</mat-icon></button>
                 </div>
             </div>
         </div>
         <div class="business-solution-wrapper">
             <h2>Digital Signage End-to-End Solutions</h2>
-        </div>
-        <div class="business-solution-wrapper">
-            <h2>Digital Signage Post Services</h2>
+            <div class="end-to-end-solutions">
+                <h3>Software</h3>
+                @for (item of e2eSolutions; track $index) {
+                    <div class="end-to-end-solutions-list">
+                        <div class="end-to-end-solutions-content">
+                            <img [src]="item.image" [alt]="item.text">
+                            <h4>{{ item.text }}</h4>
+                        </div>
+                        <p>{{ item.details }}</p>
+                    </div>
+                }
+            </div>
         </div>
     </div>
 </section>
+
+<section class="section-container post-service-section">
+    <div class="business-solution-container">
+        <div class="business-solution-wrapper">
+            <h2>Digital Signage Post Services</h2>
+            <div class="post-service-container">
+                @for (item of postServices; track $index) {
+                    <div class="post-service-list">
+                        <div class="post-service-item">
+                            <img [src]="item.image" [alt]="item.text">
+                        </div>
+                        <div class="post-service-text">
+                            <h4>{{ item.text }}</h4>
+                            <p>{{ item.details }}</p>
+                        </div>
+                    </div>
+                }
+            </div>
+            <hr>
+            <div class="post-service-impact">
+                <h4>Our solution directly impact your P&L</h4>
+                <div class="row g-3 mt-5">
+                    <app-number-counting class="col-12 col-md-6 col-lg-3" [finalValue]="-30" subText="%" [title]="'OPEX Savings'"></app-number-counting>
+                    <app-number-counting class="col-12 col-md-6 col-lg-3" [finalValue]="50" subText="%" [title]="'Gross Profit Impact'"></app-number-counting>
+                    <app-number-counting class="col-12 col-md-6 col-lg-3" [finalValue]="20" subText="%" [title]="'Revenue Boost'"></app-number-counting>
+                    <app-number-counting class="col-12 col-md-6 col-lg-3" [finalValue]="60" subText="hours" [title]="'Saved time per week'"></app-number-counting>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <app-see-more-services-section></app-see-more-services-section>
 

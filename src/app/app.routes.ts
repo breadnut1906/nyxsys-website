@@ -14,5 +14,6 @@ export const routes: Routes = [
             { path: 'audience-measurement', loadComponent: () => import('./pages/audience-measurement/audience-measurement.component').then(m => m.AudienceMeasurementComponent) },
         ]
      },
+    { path: 'contact', loadComponent: () => import('./pages/contacts/contacts.component').then(m => m.ContactsComponent) },
     { path: '**', loadComponent: () => import('./pages/page-not-found/page-not-found.component').then(m => m.PageNotFoundComponent) },
 ];

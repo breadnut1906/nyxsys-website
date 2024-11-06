@@ -11,6 +11,7 @@ import { CallToActionComponent } from '../../components/call-to-action/call-to-a
 import { GallerySectionComponent } from '../../components/gallery-section/gallery-section.component';
 import { WhyChooseUsSectionComponent } from '../../components/why-choose-us-section/why-choose-us-section.component';
 import { SeeMoreServicesSectionComponent } from '../../components/see-more-services-section/see-more-services-section.component';
+import { NumberCountingComponent } from '../../components/number-counting/number-counting.component';
 
 
 
@@ -29,6 +30,7 @@ import { SeeMoreServicesSectionComponent } from '../../components/see-more-servi
     GallerySectionComponent,
     WhyChooseUsSectionComponent,
     SeeMoreServicesSectionComponent,
+    NumberCountingComponent,
   ],
   exports: [
     CommonModule,
@@ -43,6 +45,7 @@ import { SeeMoreServicesSectionComponent } from '../../components/see-more-servi
     GallerySectionComponent,
     WhyChooseUsSectionComponent,
     SeeMoreServicesSectionComponent,
+    NumberCountingComponent,
   ]
 })
 export class ComponentsModule { }
