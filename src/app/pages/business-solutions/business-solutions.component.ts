@@ -35,7 +35,7 @@ export class BusinessSolutionsComponent implements OnInit {
         transformed with dynamic displays, delivering real-time
         information and interactive experiences, powered by
         Nyxsys' advanced technology.`,
-      image: 'assets/images/no-image.jpg'
+      image: 'assets/images/business solutions/case studies/globe.png'
     },
     { 
       text: 'DHL',
@@ -44,7 +44,7 @@ export class BusinessSolutionsComponent implements OnInit {
         signature yellow and red colors, became a striking
         symbol of the brand’s global presence and reliability,
         enhancing its visibility and impact.`,
-      image: 'assets/images/no-image.jpg'
+      image: 'assets/images/business solutions/case studies/dhl.png'
     },
     { 
       text: 'ST. LUKES',
@@ -55,7 +55,7 @@ export class BusinessSolutionsComponent implements OnInit {
         hospital. The seamless installation reflects Nyxsys'
         commitment to delivering reliable, cutting-edge
         solutions tailored to client needs.`,
-      image: 'assets/images/no-image.jpg'
+      image: 'assets/images/business solutions/case studies/st lukes.png'
     },
     { 
       text: 'Dunkin',
@@ -67,7 +67,7 @@ export class BusinessSolutionsComponent implements OnInit {
         displays for customers. This solution has streamlined
         Dunkin’s digital content delivery, reinforcing their brand
         presence while enhancing the customer experience.`,
-      image: 'assets/images/no-image.jpg'
+      image: 'assets/images/business solutions/case studies/dunkin.png'
     },
     { 
       text: 'Nissan',
@@ -80,7 +80,7 @@ export class BusinessSolutionsComponent implements OnInit {
         expertise in delivering state-of-the-art digital signage
         solutions, elevating Nissan BGC's brand presence and
         customer engagement.`,
-      image: 'assets/images/no-image.jpg'
+      image: 'assets/images/business solutions/case studies/nissan.png'
     },
     { 
       text: 'Japan Town Ayala Vertis North',
@@ -92,7 +92,7 @@ export class BusinessSolutionsComponent implements OnInit {
         expertise in cutting-edge digital signage made this
         installation a standout feature, blending modern
         technology with the sleek design of Japan Town.`,
-      image: 'assets/images/no-image.jpg'
+      image: 'assets/images/business solutions/case studies/japan town ayala vertis north.png'
     },
   ];
 
@@ -147,7 +147,7 @@ export class BusinessSolutionsComponent implements OnInit {
     arrows: false,
     autoPlay: true,
     speed: 2000,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     infinite: true, 
     centerMode: true,

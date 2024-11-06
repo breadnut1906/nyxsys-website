@@ -19,22 +19,20 @@
             <h2>Digital Signage Case Studies</h2>
             <p>Real-world success stories showcasing impactful signage solutions across diverse industries.</p>
             <div class="business-solution-carousel">
-                <ngx-slick-carousel class="carousel" #slickModalCaseStudies="slick-carousel" [config]="config">
+                <div class="row g-3">
                     @for (item of caseStudies; track $index) {
-                        <div class="business-solution-item" ngxSlickItem>
-                            <img [src]="item.image" [alt]="item.title">
-                            <div class="business-solution-overlay">
-                                <div class="business-solution-overlay-text">
-                                    <h4>{{ item.text }}</h4>
-                                    <!-- <p>{{  item.details }}</p> -->
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <div class="business-solution-item">
+                                <img [src]="item.image" [alt]="item.image">
+                                <div class="business-solution-item-overlay">
+                                    <div class="business-solution-item-text">
+                                        <h4>{{ item.text }}</h4>
+                                        <p>{{  item.details }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     }
-                </ngx-slick-carousel>
-                <div class="business-solution-carousel-buttons">
-                    <button (click)="onClickPrev()" mat-icon-button><mat-icon>keyboard_arrow_left</mat-icon></button>
-                    <button (click)="onClickNext()" mat-icon-button><mat-icon>keyboard_arrow_right</mat-icon></button>
                 </div>
             </div>
         </div>
