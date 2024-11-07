@@ -27,25 +27,25 @@ export class StaticComponent implements OnInit {
       text: 'EDSA NORTHBOUND STATIC BILLBOARD',
       address: 'EDSA corner Orense St. Makati City',
       size: '90ft (H) x 70ft (W)',
-      image: 'assets/images/static/edsa orense parallel.png'
+      image: 'assets/images/static/edsa orense parallel.jpg'
     },
     { 
       text: 'EDSA ORENSE PARALLEL NORTHBOUND STATIC BILLBOARD',
       address: 'EDSA corner Orense St., Makati City',
       size: '',
-      image: 'assets/images/static/edsa northbound static billboard.png'
+      image: 'assets/images/static/edsa northbound static billboard.jpg'
     },
     { 
       text: 'EDSA MARCALEON (DOUBLE-FACED, SOUTHBOUND)',
       address: 'EDSA Mandaluyong - Marcaleon Site, next to Petron and Shell Gasoline stations, Mandaluyong City',
       size: '80FT (H) x 70FT (W)',
-      image: 'assets/images/static/edsa marcaleon double-faced southbound.png'
+      image: 'assets/images/static/edsa marcaleon double-faced southbound.jpg'
     },
     { 
       text: 'EDSA MARCALEON (DOUBLE-FACED, NORTHBOUND)',
       address: 'EDSA Mandaluyong - Marcaleon Site, next to Petron and Shell Gasoline stations, Mandaluyong City',
       size: '80FT (H) x 70FT (W)',
-      image: 'assets/images/static/edsa marcaleon double-faced northbound.png'
+      image: 'assets/images/static/edsa marcaleon double-faced northbound.jpg'
     },
   ]
 

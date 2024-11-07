@@ -17,13 +17,13 @@ export class UtilityService {
     {
       title: 'STATIC FIXED INVENTORIES',
       description: `Range of non-digital, high-quality static advertising solutions that are designed to deliver long-lasting, impactful brand messaging.`,
-      image: 'assets/images/static/edsa northbound static billboard.png',
+      image: 'assets/images/static/edsa northbound static billboard.jpg',
       routerLink: '/services/static-fixed-inventories'
     },
     {
       title: 'BUSINESS INNOVATIVE SOLUTIONS & SERVICES',
       description: `Deliver dynamic, high-definition displays tailored for impactful advertising and realtime content updates across various industries.`,
-      image: 'assets/images/business solutions/globe.png',
+      image: 'assets/images/business solutions/globe.jpg',
       routerLink: '/services/business-innovative-solutions'
     },
     {
