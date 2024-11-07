@@ -38,20 +38,20 @@ $nyxsys-website-theme: mat.define-light-theme((
 html, body { height: 100%; }
 body { margin: 0; font-family: "Poppins", "Roboto", sans-serif; }
 
+h1 {
+  font-family: "MicroSquare", Arial, sans-serif !important;
+}
 
 /* Base font sizes */
 .hero-headline {
-  font-family: "MicroSquare", Arial, sans-serif !important;
   font-style: normal;
   color: #fafafa;
   margin: 0;
   font-size: 3rem !important;
-  letter-spacing: 12px;
 
   span {
     font-size: 10rem;
     line-height: 10rem;
-    letter-spacing: 32px;
   }
 
   span {
@@ -200,7 +200,7 @@ footer {
   .img-top-right-corner,
   .img-bottom-left-corner,
   .img-top-left-corner {
-    width: 150px;
+    width: 100px;
   }
 }
 

@@ -23,6 +23,7 @@ export class BusinessSolutionsComponent implements OnInit {
 
   @ViewChild(SlickCarouselComponent) slickModalCaseStudies!: SlickCarouselComponent;
 
+  isVcastPlaying: boolean = false;
   isVisible: boolean[] = [ false, false ];
 
   caseStudies: any[] = [
@@ -184,5 +185,11 @@ export class BusinessSolutionsComponent implements OnInit {
 
   onClickNext() {
     this.slickModalCaseStudies.slickNext();
+  }
+
+  onClickPlay() {
+    const video: any = document.getElementById('vcastplay');
+    video.play();
+    this.isVcastPlaying = true;
   }
 }

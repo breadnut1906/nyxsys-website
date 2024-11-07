@@ -124,6 +124,10 @@
 /* Mobile Styles (max-width: 767px) */
 @media (max-width: 767px) {
 
+    .slick-slide {
+        height: 350px;
+    }
+
     .more-services {
 
         h2 {
@@ -142,6 +146,10 @@
 
 /* Tablet Styles (min-width: 768px and max-width: 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .slick-slide {
+        height: 350px;
+    }
 
     .more-services {
 

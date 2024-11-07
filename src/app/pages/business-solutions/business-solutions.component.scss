@@ -1,7 +1,16 @@
-h2 {
+h2, h3 {
     font-family: 'Poppins', Arial, sans-serif !important;
+}
+
+h2 {
     font-size: 2.3rem !important;
     font-weight: 600;
+}
+
+h3 {
+    font-size: 2rem !important;
+    font-weight: 700;
+    color: #F58F20;
 }
 
 .business-solution-section {
@@ -68,7 +77,7 @@ h2 {
         .business-solution-item {
             overflow: hidden;
             position: relative;
-            min-height: 400px;
+            min-height: 350px;
             border-radius: 8px;
         
             .business-solution-item-text, .business-solution-item-overlay, img {
@@ -119,6 +128,59 @@ h2 {
     .end-to-end-solutions {
         padding: 2% 0;
 
+        .vcastplay-info {
+            padding: 5% 0;
+            display: flex;
+            flex-direction: column;
+
+            .vcastplay-video {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+
+                .vcastplay-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba($color: #1f1f1f, $alpha: 0.6);
+                    z-index: 1;
+                    border-radius: 10px;
+                    transition: opacity 0.3s;
+
+                    .play-button {
+                        border-radius: 50%;
+                        width: 60px;
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        svg {
+                            color: rgba($color: #1f1f1f, $alpha: 0.6);
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        &:hover {
+                            background-color: rgba($color: #fafafa, $alpha: 0.6);
+                        }
+                    }
+                }
+            }
+
+            h3, p {
+                margin-bottom: 28px !important;
+            }
+        }
+
         .end-to-end-solutions-list {
             margin: 2% 0;
             padding: 3% 5%;
@@ -129,6 +191,8 @@ h2 {
             gap: 24px;
             background-color: #F4F1EC;
             border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 0.5s ease-in-out;
             
             h4, p {
                 margin: 0;
@@ -150,6 +214,12 @@ h2 {
 
             img {
                 width: 60px;
+            }
+            
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                border: solid 2px #F58F20;
             }
         }
     }
@@ -231,6 +301,12 @@ hr {
         font-size: 1.5rem !important;
     }
 
+    h3 {
+        font-size: 1.2rem !important;
+        font-weight: 700;
+        color: #F58F20;
+    }
+
     .business-solution-wrapper {
         padding: 0 2% !important;
     }
@@ -246,6 +322,10 @@ hr {
             flex-direction: column !important;
             gap: 16px !important;
         }
+    }
+
+    .post-service-container {
+        flex-direction: column !important;
     }
 }
 
@@ -260,6 +340,12 @@ hr {
         font-size: 2rem !important;
     }
 
+    h3 {
+        font-size: 1.2rem !important;
+        font-weight: 700;
+        color: #F58F20;
+    }
+
     .business-solution-wrapper {
         padding: 0 2% !important;
     }
@@ -275,6 +361,10 @@ hr {
             flex-direction: column !important;
             gap: 16px !important;
         }
+    }
+
+    .post-service-container {
+        flex-direction: column !important;
     }
     
 }

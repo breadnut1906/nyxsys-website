@@ -3,11 +3,12 @@ import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
 import { ComponentsModule } from '../../modules/components/components.module';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contacts',
   standalone: true,
-  imports: [ MaterialUiModule, ComponentsModule ],
+  imports: [ MaterialUiModule, ComponentsModule, RouterLink ],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.scss',
   animations: [

@@ -77,7 +77,7 @@
                 
                 <div class="socials">
                     @for (item of socialLinks; track $index) {
-                        <a [href]="item.url" target="_blank" rel="noopener noreferrer">
+                        <a [routerLink]="item.url" target="_blank" rel="noopener noreferrer">
                             <img [src]="'assets/icons/' + item.icon + '.png'" [alt]="item.icon">
                         </a>
                     }

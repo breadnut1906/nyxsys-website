@@ -39,7 +39,41 @@
         <div class="business-solution-wrapper">
             <h2>Digital Signage End-to-End Solutions</h2>
             <div class="end-to-end-solutions">
-                <h3>Software</h3>
+                <div class="vcastplay-info">
+                    <h3>&mdash;VCASTPLAY</h3>
+                    <p>
+                        A cloud-based CMS for the DOOH industry, popular among major Philippine companies for indoor and 
+                        outdoor digital signage. Developed by NYXSYS PH, a leading advertising firm with 25 years of experience 
+                        since its spinoff from Mediapool. It also operates one of the largest LEDs in the Philippines, situated in a
+                        prime location for both indoor and outdoor DOOH displays
+                    </p>
+                    <p>Take your business to the next level with vCastPlay,
+                        the intelligent, cloud-powered solution designed to
+                        deliver organized, engaging digital ad content.
+                        Seamlessly tailored for your business needs,
+                        vCastPlay makes managing your digital signage
+                        effortless.
+                    </p>
+                    <p>With its user-friendly interface, vCastPlay helps boost
+                        your sales and transform how your audience
+                        experiences your brand. Elevate your marketing
+                        strategy with this cutting-edge advertising tool!</p>
+                    <div id="video-container" class="vcastplay-video">
+                        <video id="vcastplay" [autoplay]="false" [muted]="true" [loop]="true" [playsInline]="true" class="vcastplay-video" preload="auto">
+                            <source src="assets/videos/vcastplay software video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        @if (!isVcastPlaying) {
+                            <div class="vcastplay-overlay">
+                                <button (click)="onClickPlay()" class="play-button">
+                                    <svg viewBox="0 0 24 24">
+                                      <path d="M8 5v14l11-7z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        }
+                    </div>
+                </div>
                 @for (item of e2eSolutions; track $index) {
                     <div class="end-to-end-solutions-list">
                         <div class="end-to-end-solutions-content">
@@ -52,6 +86,7 @@
             </div>
         </div>
     </div>
+    <img src="assets/images/graphics/dots.png" class="img-bottom-left-corner" alt="Dots" loading="lazy">
 </section>
 
 <section class="section-container post-service-section">

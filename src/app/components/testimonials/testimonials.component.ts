@@ -15,13 +15,11 @@ interface Testimonial {
 export class TestimonialsComponent {
 
   config: any = { 
-    dots: true, 
-    infinite: true, 
-    speed: 2500, 
-    autoplay: true,
-    centerMode: true,
-    mobileFirst: true,
-    slidesToShow: 1,
+    autoPlay: true,
+    arrows: false,
+    dots: false, 
+    speed: 2000,
+    infinite: true,
   };
 
   testimonials: Testimonial[] = [
