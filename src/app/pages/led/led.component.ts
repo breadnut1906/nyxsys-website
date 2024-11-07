@@ -87,7 +87,7 @@ export class LedComponent implements OnInit {
       text: "Market Market",
       items: [
         { text: "Ground Floor beside elevator in front of National Bookstore", image: "assets/images/led/mall posterboxes/market market/Ground Floor beside elevator in front of National Bookstore.jpg" },
-        { text: "1st floor Activity Center in front of Levi’s", image: "assets/images/led/mall posterboxes/market market/1st floor Activity Center in front of Levi’s.jpg" },
+        { text: "1st floor Activity Center in front of Levi's", image: "assets/images/led/mall posterboxes/market market/1st floor Activity Center in front of Levi's.jpg" },
         { text: "2nd Floor in front of MoshiKoshi", image: "assets/images/led/mall posterboxes/market market/2nd Floor in front of MoshiKoshi.jpg" },
         { text: "Drop-off, Entrance from Terminal", image: "assets/images/led/mall posterboxes/market market/Drop-off, Entrance from Terminal.jpg" },
       ]
