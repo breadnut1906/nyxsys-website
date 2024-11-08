@@ -15,8 +15,9 @@ export class FooterComponent {
   phone: string = '(02) 8687 0503 loc. 310';
 
   socialLinks = [
-    { name: 'Facebook', url: 'https://www.facebook.com', icon: 'facebook' },
-    { name: 'Instagram', url: 'https://www.instagram.com', icon: 'instagram' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com', icon: 'linkedin' },
+    { name: 'Facebook', url: 'https://www.facebook.com/NyxsysPh/', icon: 'facebook' },
+    { name: 'Instagram', url: 'https://www.instagram.com/nyxsysph/', icon: 'instagram' },
+    { name: 'Twitter', url: 'https://twitter.com/nyxsysph', icon: 'twitter' },
+    { name: 'LinkedIn', url: 'https://ph.linkedin.com/in/nyxsysph', icon: 'linkedin' },
   ];
 }

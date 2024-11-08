@@ -13,7 +13,6 @@
 </section>
 
 <section class="section-container business-solution-contents">
-    <img src="assets/images/graphics/dots.png" class="img-top-right-corner" alt="Dots" loading="lazy">
     <div class="business-solution-container">
         <div class="business-solution-wrapper">
             <h2>Digital Signage Case Studies</h2>
@@ -39,6 +38,18 @@
         <div class="business-solution-wrapper">
             <h2>Digital Signage End-to-End Solutions</h2>
             <div class="end-to-end-solutions">
+                <div class="hardware-info">
+                    <h3>&mdash;Hardware</h3>
+                    <div class="row g-3 w-100 mt-3">
+                        @for (item of [ 1, 2 ,3 ]; track $index) {
+                            <div class="col-12 col-md-4">
+                                <div class="hardware-item">
+                                    <img [src]="'assets/images/business solutions/end to end/hardware ' + item + '.jpg'" [alt]="'hardware' + item">
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
                 <div class="vcastplay-info">
                     <h3>&mdash;VCASTPLAY</h3>
                     <p>
@@ -86,7 +97,6 @@
             </div>
         </div>
     </div>
-    <img src="assets/images/graphics/dots.png" class="img-bottom-left-corner" alt="Dots" loading="lazy">
 </section>
 
 <section class="section-container post-service-section">

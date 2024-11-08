@@ -32,7 +32,8 @@
             width: 100%;
             height: 100%;
             margin-top: 20px;
-            padding-top: 75%; /* This controls the aspect ratio */
+            padding-top: 75%;
+            border-radius: 6px;
             
             img {
                 position: absolute;
@@ -41,6 +42,14 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+                    
+            & img {
+                transition: transform 0.7s ease;
+            }
+
+            &:hover img {
+                transform: scale(1.2);
             }
         }
     }

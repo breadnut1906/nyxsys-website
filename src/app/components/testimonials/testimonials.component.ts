@@ -17,7 +17,7 @@ export class TestimonialsComponent {
   config: any = { 
     autoPlay: true,
     arrows: false,
-    dots: false, 
+    dots: true, 
     speed: 2000,
     infinite: true,
   };
