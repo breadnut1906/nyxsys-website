@@ -29,7 +29,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 0 10%;
+            // padding: 0 5%;
 
             .mat-mdc-raised-button {
                 margin-top: 7%;
@@ -38,9 +38,9 @@
             .hero-header {
                 font-size: clamp(2.5rem, 5vw + 1rem, 4rem); /* Responsive font size */
                 font-weight: bold;
-                line-height: 1.2;
-                letter-spacing: 0.5px;
-                margin: 0 5%;
+                line-height: 1.1em;
+                letter-spacing: 0.05em;
+                width: 70%;
                 color: #fafafa; /* Adjust color as needed */
 
                 span {
@@ -51,10 +51,9 @@
             .hero-subheader {
                 font-size: clamp(1.05rem, 2.25vw + 0.5rem, 1rem); /* Responsive font size */
                 font-weight: 400;
-                line-height: 1.5;
                 margin-top: 1.05rem;
-                padding: 0 5%;
-                margin: 20px 15%;
+                max-width: 600px;
+                margin: 25px 0 0 0;
                 color: #fafafa; /* Adjust color as needed */
             }
 
@@ -89,6 +88,7 @@
 
     .hero-header {
         margin: 0 !important;
+        width: 100% !important;
     }
     
     .hero-subheader {
@@ -107,6 +107,7 @@
 
     .hero-header {
         margin: 0 !important;
+        width: 100% !important;
     }
 
     .hero-subheader {
