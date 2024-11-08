@@ -83,23 +83,12 @@
 @media (max-width: 767px) {
 
     .hero-section {
-        height: 90vh;
-        padding: 120px 20px 130px 20px;;
-    }
-
-    .hero-container, .hero-subheader {
-        align-items: start !important;
-        text-align: start !important;
-        padding: 0 !important;
+        padding: 160px 20px 130px 20px;
     }
 
     .hero-header {
         margin: 0 !important;
         width: 100% !important;
-    }
-    
-    .hero-subheader {
-        margin: 20px 0 !important;
     }
 }
 
@@ -108,22 +97,15 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .hero-section {
-        height: 90vh;
-        padding: 140px 20px 130px 20px;
+        padding: 180px 20px 130px 20px;
     }
 
     .hero-container, .hero-subheader {
-        align-items: start !important;
-        text-align: start !important;
-        padding: 0 !important;
+        padding: 2%;
     }
 
     .hero-header {
         margin: 0 !important;
         width: 100% !important;
-    }
-
-    .hero-subheader {
-        margin: 20px 0 !important;
     }
 }
