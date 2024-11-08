@@ -3,6 +3,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    padding: 200px 0 130px 0;
 
     .hero-video {
         position: absolute;
@@ -40,7 +41,7 @@
                 font-weight: bold;
                 line-height: 1.1em;
                 letter-spacing: 0.05em;
-                width: 70%;
+                width: 60%;
                 color: #fafafa; /* Adjust color as needed */
 
                 span {
@@ -80,6 +81,12 @@
 /* Media Queries */
 /* Mobile Styles (max-width: 767px) */
 @media (max-width: 767px) {
+
+    .hero-section {
+        height: 90vh;
+        padding: 120px 20px 130px 20px;;
+    }
+
     .hero-container, .hero-subheader {
         align-items: start !important;
         text-align: start !important;
@@ -99,6 +106,12 @@
 
 /* Tablet Styles (min-width: 768px and max-width: 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .hero-section {
+        height: 90vh;
+        padding: 140px 20px 130px 20px;
+    }
+
     .hero-container, .hero-subheader {
         align-items: start !important;
         text-align: start !important;
