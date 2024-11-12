@@ -65,16 +65,16 @@
     }
 
     /* Color overlay filter */
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba($color: #002868, $alpha: 0.7);
-        z-index: -1; /* Ensures the overlay is above the video but below the content */
-    }
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: rgba($color: #002868, $alpha: 0.2);
+    //     z-index: -1; /* Ensures the overlay is above the video but below the content */
+    // }
 }
 
 

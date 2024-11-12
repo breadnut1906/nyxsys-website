@@ -1,11 +1,9 @@
 .about-section {
     font-family: 'Poppins', Arial, sans-serif;
-    
-    background-color: #fafafa;
-
     position: relative;
     width: 100%;
     overflow: hidden;
+    background: #002868 url('/assets/images/cta.jpg') right top no-repeat;
 
     .about-wrapper {
         position: relative;
@@ -14,6 +12,36 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
+        color: #fafafa;
+
+        h2 {
+            color: #F58F20 !important;
+        }
+
+        .about-sentence-one, .about-sentence-two {
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+        .about-sentence-one {
+            width: 80%;
+            font-weight: 800;
+        }
+
+        .about-sentence-two {
+            hr {
+                border: 3px solid #fafafa;
+            }
+
+            p {
+                margin: 5% 0;
+            }
+        }
+
+        // a {
+        //     margin-top: 8%;
+        // }
+        
 
         .left-content {
             flex: 1;
@@ -30,14 +58,6 @@
 
         .right-content {
             flex: 1;
-
-            h2 {
-                color: #F58F20 !important;
-            }
-
-            a {
-                margin-top: 8%;
-            }
 
             .about-subtitle {
                 margin-bottom: 24px;

@@ -3,6 +3,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    background: #fafafa url('/assets/images/driving force bg.png') right top no-repeat;
     
     .feature-container {
         position: relative;
@@ -21,15 +22,18 @@
             padding: auto 20px;
             
             h2 {
+                color: #F58F20 !important;
                 font-size: 2.3rem;
                 font-weight: 700;
             }
 
             .feature-item {
+                color: #fafafa;
                 height: 100%;
                 padding: 8%;
-                border: solid #EBEDF0 2px;
+                // border: solid #EBEDF0 2px;
                 border-radius: 8px;
+                background-color: rgba($color: #002868, $alpha: 0.5);
 
                 img {
                     height: 50px;

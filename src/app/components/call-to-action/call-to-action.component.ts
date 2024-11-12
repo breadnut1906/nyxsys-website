@@ -11,4 +11,7 @@ import { RouterLink } from '@angular/router';
 })
 export class CallToActionComponent {
 
+  emailAddress: string = 'inquire@nyxsys.ph';
+  address: string = 'G/F Paragon Plaza Bldg., 162 EDSA cor. Reliance St., Mandaluyong City, PH';
+  phone: string = '(02) 8687 0503 loc. 310';
 }
