@@ -97,6 +97,29 @@ export class BusinessSolutionsComponent implements OnInit {
     },
   ];
 
+  hardwares: any[] = [
+    {
+      text: 'Indoor Interactive Touch KIOSK (IK140)',
+      image: 'assets/images/business solutions/end to end/INDOOR-INTERACTIVE-TOUCH-KIOSK-IK140.jpg'
+    },
+    {
+      text: 'Menu Board',
+      image: 'assets/images/business solutions/end to end/menu board.jpg'
+    },
+    {
+      text: 'Uniview Digital Window Display',
+      image: 'assets/images/business solutions/end to end/Uniview-digital-window-display.jpg'
+    },
+    {
+      text: 'Uniview Indoor Digital Signage (AL19900)',
+      image: 'assets/images/business solutions/end to end/Uniview-indoor-digital-signage-AL1900.jpg'
+    },
+    {
+      text: 'Uniview Video Wall',
+      image: 'assets/images/business solutions/end to end/Uniview-Video-wall.jpg'
+    },
+  ]
+
   e2eSolutions: any[] = [
     {
       text: 'Versatile Digital Signage System',

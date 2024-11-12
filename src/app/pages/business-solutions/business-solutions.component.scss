@@ -131,22 +131,32 @@ h3 {
         .hardware-info {
             margin-bottom: 32px;
             position: relative;
-
+            width: 100%;
+                
             .hardware-item {
+                position: relative;
                 overflow: hidden;
-                max-height: 400px;
+                max-height: 800px;
                 border-radius: 6px;
+                text-align: center;
+                background-color: #F4F1EC;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.3s, box-shadow 0.3s;
+                animation: fadeIn 0.5s ease-in-out;
 
                 img {
-                    width: 100%;
-                }
-                    
-                & img {
-                    transition: transform 0.7s ease;
+                    width: 90%;
+                    height: 100%;
+                    margin: 5%;
+                    object-fit: cover;
                 }
     
-                &:hover img {
-                    transform: scale(1.2);
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
                 }
             }
         }
