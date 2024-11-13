@@ -7,6 +7,7 @@ h2 {
     position: relative;
     width: 100%;
     overflow: hidden;
+    background: #002868 url('/assets/images/why choose us.png') right top no-repeat;
     
     .why-container {
         position: relative;
@@ -26,6 +27,7 @@ h2 {
             text-align: center;
         
             h2 {
+                color: #F58F20 !important;
                 font-family: 'Poppins', Arial, sans-serif;
                 font-size: 2.3rem;
                 line-height: 2.3rem !important;
@@ -40,6 +42,7 @@ h2 {
                 border-radius: 8px;
                 transition: transform 0.3s, box-shadow 0.3s;
                 animation: fadeIn 0.5s ease-in-out;
+                background-color: #fafafa;
 
                 img {
                     height: 50px;
@@ -47,7 +50,8 @@ h2 {
                 }
 
                 h4 {
-                    font-weight: 500;
+                    color: #002868;
+                    font-weight: 700;
                     margin-bottom: 26px;
                 }
 

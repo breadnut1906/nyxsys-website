@@ -1,4 +1,5 @@
 h2 {
+    color: #F58F20 !important;
     font-family: 'Poppins', Arial, sans-serif !important;
     font-size: 2.3rem !important;
     font-weight: 700;
@@ -63,49 +64,58 @@ h2 {
     .led-content {
         overflow: hidden;
         position: relative;
-        min-height: 400px;
         border-radius: 8px;
+        background-color: #EBEDF0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     
-        .led-content-text, .led-content-overlay, img {
-            position: absolute;
-            left: 0;
-            width: 100%;
-        }
+        // .led-content-text, .led-content-overlay {
+        //     position: absolute;
+        //     left: 0;
+        //     width: 100%;
+        // }
     
         img {
-            top: 0;
-            height: 100%;
+            // top: 0;
+            height: auto;
             width: 100%;
-            z-index: -2;
-            object-fit: cover;
+            padding: 5%;
+            // z-index: -2;
         }
 
         .led-content-overlay {
             height: 100%;
-            color: #fafafa;
-            background: linear-gradient(to top, #1f1f1f, rgba($color:#fff, $alpha: 0));
+            // color: #fafafa;
+            // background: linear-gradient(to top, #1f1f1f, rgba($color:#fff, $alpha: 0));
 
     
             .led-content-text {
-                bottom: 0;
+                // bottom: 0;
                 padding: 3% 5%;
         
-                h4 {
-                    margin: 0;
-                    padding: 0;
-                    font-weight: 700;
-                }
+                // h4 {
+                //     margin: 0;
+                //     padding: 0;
+                //     font-weight: 700;
+                // }
             }
         }
 
-        & img {
-            transition: transform 0.7s ease;
-        }
+        // & img {
+        //     transition: transform 0.7s ease;
+        // }
 
-        &:hover img {
-            transform: scale(1.2);
-        }
+        // &:hover img {
+        //     transform: scale(1.2);
+        // }
     }
+}
+
+.led-posterbox-label {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 

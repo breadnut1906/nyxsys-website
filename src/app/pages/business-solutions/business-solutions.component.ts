@@ -151,12 +151,12 @@ export class BusinessSolutionsComponent implements OnInit {
   postServices: any[] = [
     {
       text: 'Social Media',
-      details: 'Handles social media content from planning to performance analysis, ensuring engaging and relevant posts that build your digital presence.',
+      details: 'Offers complete social media creative solutions to make your brand shine online and cultivate a rapport with their audience. From concept to final design, we craft visually engaging content and compelling messaging tailored to capture your audience’s attention and drive engagement. Let our team help you elevate your social media presence with creative that stands out and connects.',
       image: 'assets/images/business solutions/post services/social media.jpg'
     },
     {
       text: 'Creative Creation',
-      details: 'Manages the creative process, delivering eye-catching visuals and content that align with your brand and elevate your marketing efforts.',
+      details: 'Our team handles every step of the creative process—from brainstorming and design to polished final output—strategically matched piece that resonates with your target audience. With eye-catching visuals and carefully crafted messaging, we help your brand stand out, engage consumers, and make a lasting impression across all digital platforms.',
       image: 'assets/images/business solutions/post services/creatives creation.jpg'
     },
     {

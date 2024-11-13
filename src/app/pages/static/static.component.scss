@@ -1,4 +1,5 @@
 h2 {
+    color: #F58F20 !important;
     font-family: 'Poppins', Arial, sans-serif !important;
     font-size: 2.3rem !important;
     font-weight: 700;
@@ -10,7 +11,7 @@ h2 {
     height: 70vh;
     overflow: hidden;
 
-    .static-image {
+    .static-video {
         position: absolute;
         top: 0;
         left: 0;
@@ -66,46 +67,51 @@ h2 {
         min-height: 500px;
         overflow: hidden;
         border-radius: 8px;
+        background-color: #EBEDF0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     
-        .static-content-text, .static-content-overlay, img {
-            position: absolute;
-            left: 0;
-            width: 100%;
-        }
+        // .static-content-text, .static-content-overlay, img {
+        //     position: absolute;
+        //     left: 0;
+        //     width: 100%;
+        // }
 
         img {
-            top: 0;
-            height: 100%;
+            // top: 0;
+            height: auto;
             width: 100%;
-            z-index: -2;
-            object-fit: cover;
+            padding: 5%;
+            // z-index: -2;
+            // object-fit: cover;
         }
 
         .static-content-overlay {
             height: 100%;
-            color: #fafafa;
-            background: linear-gradient(to top, #1f1f1f, rgba($color:#fff, $alpha: 0));
+            // color: #fafafa;
+            // background: linear-gradient(to top, #1f1f1f, rgba($color:#fff, $alpha: 0));
 
     
             .static-content-text {
-                bottom: 0;
+                // bottom: 0;
                 padding: 3% 5%;
         
-                h4 {
-                    margin: 0;
-                    padding: 0;
-                    font-weight: 700;
-                }
+                // h4 {
+                //     margin: 0;
+                //     padding: 0;
+                //     font-weight: 700;
+                // }
             }
         }
 
-        & img {
-            transition: transform 0.7s ease;
-        }
+        // & img {
+        //     transition: transform 0.7s ease;
+        // }
 
-        &:hover img {
-            transform: scale(1.2);
-        }
+        // &:hover img {
+        //     transform: scale(1.2);
+        // }
     }
 }
 
