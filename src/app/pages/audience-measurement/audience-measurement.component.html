@@ -1,7 +1,11 @@
 <app-navbar></app-navbar>
 
 <section class="section-container audience-section">
-    <img class="audience-image" src="assets/images/cta.jpg" alt="audience" loading="lazy">
+    <!-- <img class="audience-image" src="assets/images/cta.jpg" alt="audience" loading="lazy"> -->
+    <video [autoplay]="true" [muted]="true" [loop]="true" [playsInline]="true" class="audience-video" preload="auto">
+        <source src="assets/videos/audience.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <div class="audience-container">
         <div class="audience-wrapper">
             <h1 class="audience-header audience-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">
@@ -17,6 +21,7 @@
 </section>
 
 <section class="section-container description-section">
+    <div class="gradient-bg-top-right"></div>
     <div class="description-container">
         <div class="description-wrapper">
             <div class="description-content">
@@ -48,7 +53,7 @@
             <h2>Indoor Mall Audience Measurement</h2>
             <p>Unlock insights into visitor behavior and engagement in real time.</p>
             <div class="row g-3 mt-3">
-                <div class="col-12 col-md-6 col-lg-8">
+                <div class="col-12">
                     <div class="indoor-outdoor-content">
                         <video id="vcastplay" [autoplay]="true" [muted]="true" [loop]="true" preload="auto">
                             <source src="assets/videos/face tracking.mp4" type="video/mp4">
@@ -56,7 +61,12 @@
                         </video>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12">
+                    <div class="indoor-outdoor-content">
+                        <img src="assets/images/audience measurement/indoor/indoor mall audience measurement 0.png" alt="indoor mall audience measurement" loading="lazy">
+                    </div>
+                </div>
+                <!-- <div class="col-12 col-md-6 col-lg-4">
                     <div class="indoor-outdoor-content">
                         <img src="assets/images/audience measurement/indoor/indoor mall audience measurement 2.png" alt="indoor mall audience measurement 2.png">
                     </div>
@@ -70,14 +80,14 @@
                     <div class="indoor-outdoor-content">
                         <img src="assets/images/audience measurement/indoor/indoor mall audience measurement 4.png" alt="indoor mall audience measurement 4.png">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="indoor-outdoor-wrapper">
             <h2>Vehicle Audience Measurement</h2>
             <p>Gain real-time insights into on-the-road audience behavior and engagement.</p>
             <div class="row g-3 mt-3">
-                <div class="col-12 col-md-6 col-lg-8">
+                <div class="col-12">
                     <div class="indoor-outdoor-content">
                         <video id="vcastplay" [autoplay]="true" [muted]="true" [loop]="true" [playsInline]="true" preload="auto">
                             <source src="assets/videos/vehicle tracking.mp4" type="video/mp4">
@@ -85,7 +95,12 @@
                         </video>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12">
+                    <div class="indoor-outdoor-content">
+                        <img src="assets/images/audience measurement/outdoor/Vehicle Demographics audience measurement.png" alt="Vehicle Demographics audience measurement.png" loading="lazy">
+                    </div>
+                </div>
+                <!-- <div class="col-12 col-md-6 col-lg-4">
                     <div class="indoor-outdoor-content">
                         <img src="assets/images/audience measurement/outdoor/Vehicle Demographics audience measurement 2.png" alt="Vehicle Demographics audience measurement 2.png">
                     </div>
@@ -99,12 +114,14 @@
                     <div class="indoor-outdoor-content">
                         <img src="assets/images/audience measurement/outdoor/Vehicle Demographics audience measurement 4.png" alt="Vehicle Demographics audience measurement 4.png">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 </section>
 
 <app-see-more-services-section></app-see-more-services-section>
+
+<app-testimonials></app-testimonials>
 
 <app-footer></app-footer>

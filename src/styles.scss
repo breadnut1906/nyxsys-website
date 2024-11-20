@@ -152,6 +152,57 @@ footer {
   left: 0;
 }
 
+// Gradient Background
+.gradient-bg-top,
+.gradient-bg-top-left,
+.gradient-bg-top-right {
+  position: absolute;
+  top: 0;
+  background-color: #002868;
+  filter: blur(256px);
+}
+
+.gradient-bg-bottom,
+.gradient-bg-bottom-left,
+.gradient-bg-bottom-right {
+  position: absolute;
+  bottom: 0;
+  background-color: #002868;
+  filter: blur(256px);
+}
+
+.gradient-bg-center-right {
+  position: absolute;
+  top: 30%;
+  right: -18%;
+  background-color: #002868;
+  height: 279px;
+  width: 559px;
+  border-radius: 100%;
+  filter: blur(256px);
+  transform: translate(0, -18%);
+}
+
+.gradient-bg-top-right, .gradient-bg-bottom-right {
+  height: 279px;
+  width: 559px;
+  right: -18%;
+  border-radius: 100%;
+}
+
+.gradient-bg-top-left, .gradient-bg-bottom-left {
+  height: 279px;
+  width: 559px;
+  left: -18%;
+  border-radius: 100%;
+}
+
+.gradient-bg-top, .gradient-bg-bottom {
+  height: 279px;
+  width: 100%;
+  left: 0;
+}
+
 /* Media Queries */
 /* Mobile Styles (max-width: 767px) */
 @media (max-width: 767px) {

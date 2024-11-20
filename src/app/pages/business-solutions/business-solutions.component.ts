@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
 import { ComponentsModule } from '../../modules/components/components.module';
@@ -8,7 +7,7 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-business-solutions',
   standalone: true,
-  imports: [ MaterialUiModule, ComponentsModule, RouterLink ],
+  imports: [ MaterialUiModule, ComponentsModule ],
   templateUrl: './business-solutions.component.html',
   styleUrl: './business-solutions.component.scss',
   animations: [

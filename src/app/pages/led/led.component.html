@@ -1,7 +1,11 @@
 <app-navbar></app-navbar>
 
 <section class="section-container led-section">
-    <img class="led-image" src="assets/images/cta.jpg" alt="led" loading="lazy">
+    <!-- <img class="led-image" src="assets/images/cta.jpg" alt="led" loading="lazy"> -->
+    <video [autoplay]="true" [muted]="true" [loop]="true" [playsInline]="true" class="led-video" preload="auto">
+        <source src="assets/videos/led.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <div class="led-container">
         <div class="led-wrapper">
             <h1 class="led-header led-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">LED Media Inventories</h1>
@@ -20,7 +24,7 @@
                 @for (item of ledInventories; track $index) {
                     <div class="col-12 col-lg-4">
                         <div class="led-content">
-                            <img [src]="item.image" [alt]="item.image">
+                            <img [src]="item.image" [alt]="item.image" loading="lazy">
                             <div class="led-content-overlay">
                                 <div class="led-content-text">
                                     <h4>{{ item.text }}</h4>
@@ -35,14 +39,14 @@
         </div>
         <div class="led-wrapper">
             <h2>Mall Posterboxes</h2>
-            <mat-tab-group [dynamicHeight]="true" mat-stretch-tabs>
+            <mat-tab-group color="accent" [dynamicHeight]="true" mat-stretch-tabs>
                 @for (item of mallPosterboxes; track $index) {
                     <mat-tab [label]="item.text">
                         <div class="row g-3 mt-2">
                             @for (childItem of item.items; track $index) {
-                                <div class="col-12 col-md-6 col-lg-4">
+                                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
                                     <div class="led-content">
-                                        <img [src]="childItem.image" [alt]="childItem.image">
+                                        <img [src]="childItem.image" [alt]="childItem.image" loading="lazy">
                                         <div class="led-content-overlay">
                                             <div class="led-content-text">
                                                 <h4>{{ childItem.text }}</h4>

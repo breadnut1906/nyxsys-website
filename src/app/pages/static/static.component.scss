@@ -10,7 +10,7 @@ h2 {
     height: 70vh;
     overflow: hidden;
 
-    .static-image {
+    .static-video {
         position: absolute;
         top: 0;
         left: 0;
@@ -60,52 +60,74 @@ h2 {
 }
 
 .static-gallery {
+    padding-bottom: 0 !important;
 
     .static-content {
-        position: relative;
-        min-height: 500px;
         overflow: hidden;
-        border-radius: 8px;
+        position: relative;
+        border-radius: 6px;
+        background-color: #EBEDF0;
+        padding: 5%;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
-        .static-content-text, .static-content-overlay, img {
-            position: absolute;
-            left: 0;
-            width: 100%;
-        }
-
         img {
-            top: 0;
-            height: 100%;
-            width: 100%;
-            z-index: -2;
-            object-fit: cover;
+            height: 300px;
+            width: auto;
+            max-width: 100%;
         }
 
         .static-content-overlay {
-            height: 100%;
-            color: #fafafa;
-            background: linear-gradient(to top, #1f1f1f, rgba($color:#fff, $alpha: 0));
+            width: 100%;
+            margin-top: 32px;
 
-    
-            .static-content-text {
-                bottom: 0;
-                padding: 3% 5%;
-        
-                h4 {
-                    margin: 0;
-                    padding: 0;
-                    font-weight: 700;
-                }
+            h4 {
+                font-weight: 700;
             }
         }
+    
+        // .static-content-text, .static-content-overlay, img {
+        //     position: absolute;
+        //     left: 0;
+        //     width: 100%;
+        // }
 
-        & img {
-            transition: transform 0.7s ease;
-        }
+        // img {
+        //     top: 0;
+        //     height: 100%;
+        //     width: 100%;
+        //     z-index: -2;
+        //     object-fit: cover;
+        // }
 
-        &:hover img {
-            transform: scale(1.2);
-        }
+        // .static-content-overlay {
+        //     height: 100%;
+        //     color: #fafafa;
+        //     background: linear-gradient(to top, #1f1f1f, rgba($color:#fff, $alpha: 0));
+
+    
+        //     .static-content-text {
+        //         bottom: 0;
+        //         padding: 3% 5%;
+        
+        //         h4 {
+        //             margin: 0;
+        //             padding: 0;
+        //             font-weight: 700;
+        //         }
+        //     }
+        // }
+
+        // & img {
+        //     transition: transform 0.7s ease;
+        // }
+
+        // &:hover img {
+        //     transform: scale(1.2);
+        // }
     }
 }
 
