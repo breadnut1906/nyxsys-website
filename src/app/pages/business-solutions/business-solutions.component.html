@@ -79,14 +79,15 @@
                             experiences your brand. Elevate your marketing
                             strategy with this cutting-edge advertising tool!</p>
                     </div>
-                    <div class="row g-3 align-items-center">
-                        <div class="col-12 col-lg-6">
+                    <div class="row g-3 align-items-center flex-wrap-reverse">
+                        <div class="col-12 col-lg-6 m-0">
+                            <h4 class="my-4">Feature Benefits</h4>
                             <mat-accordion>
                                 @for (item of e2eSolutions; track $index) {
                                     <mat-expansion-panel>
                                         <mat-expansion-panel-header>
                                             <mat-panel-title>
-                                                <img [src]="item.image" [alt]="item.text" loading="lazy" width="20">
+                                                <img [src]="item.image" [alt]="item.text" loading="lazy" width="25">
                                                 <span class="mx-3 e2eTitle">{{ item.text }}</span>
                                             </mat-panel-title>
                                         </mat-expansion-panel-header>
@@ -123,6 +124,7 @@
     <div class="business-solution-container">
         <div class="business-solution-wrapper">
             <h2>Digital Signage Post Services</h2>
+            <h4>Content Management System</h4>
             <div class="post-service-container">
                 @for (item of postServices; track $index) {
                     <div class="post-service-list">
