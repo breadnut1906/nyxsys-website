@@ -26,7 +26,7 @@ export class LedComponent implements OnInit {
       text: "ICONIC - EDSA ORENSE LED (SOUTH BOUND)",
       address: "447 Magsaysay Avenue, Guadalupe Nuevo, Makati City",
       size: "80FT (H) x 140FT (W)",
-      image: "assets/images/led/led inventories/iconic.png"
+      image: "assets/images/led/led inventories/iconic-2.png"
     },
     { 
       text: "EDSA PARAGON LED (NORTHBOUND)",

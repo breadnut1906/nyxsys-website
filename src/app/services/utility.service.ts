@@ -11,7 +11,7 @@ export class UtilityService {
     {
       title: 'LED MEDIA INVENTORIES',
       description: 'Comprehensive collection of highperformance LED display systems designed to meet diverse marketing and advertising needs.',
-      image: 'assets/images/led/iconic.png',
+      image: 'assets/images/led/led-services.png',
       routerLink: '/services/led-media-inventories'
     },
     {

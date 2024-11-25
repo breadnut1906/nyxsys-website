@@ -27,7 +27,7 @@ export class BusinessSolutionsComponent implements OnInit {
 
   caseStudies: any[] = [
     { 
-      text: 'Globe',
+      text: 'Globe Telecom',
       details: `Nyxsys Philippines provided Globe with a complete digital
         signage solution, from installing high-definition screens
         to seamless software integration and content
@@ -38,7 +38,7 @@ export class BusinessSolutionsComponent implements OnInit {
       image: 'assets/images/business solutions/case studies/globe.jpg'
     },
     { 
-      text: 'DHL',
+      text: 'DHL Warehouse',
       details: `Nyxsys Philippines constructed a massive LED display
         for DHL. The prominent screen, showcasing DHL’s
         signature yellow and red colors, became a striking
@@ -47,7 +47,7 @@ export class BusinessSolutionsComponent implements OnInit {
       image: 'assets/images/business solutions/case studies/dhl.jpg'
     },
     { 
-      text: 'ST. LUKES',
+      text: 'ST. Lukes Medical',
       details: `Nyxsys Philippines successfully supplied, delivered, and
         installed Posterboxes at St. Luke’s Medical Center. These
         high-quality displays provide clear and vibrant visuals,
@@ -58,7 +58,7 @@ export class BusinessSolutionsComponent implements OnInit {
       image: 'assets/images/business solutions/case studies/st lukes.jpg'
     },
     { 
-      text: 'Dunkin',
+      text: 'Dunkin Menu Boards',
       details: `Nyxsys Philippines facilitated the supply and delivery of
         Vcastplay for Dunkin', enhancing their in-store digital
         signage system. With Vcastplay, Dunkin' can now
@@ -70,7 +70,7 @@ export class BusinessSolutionsComponent implements OnInit {
       image: 'assets/images/business solutions/case studies/dunkin.jpg'
     },
     { 
-      text: 'Nissan',
+      text: 'Nissan Dealer Showroom',
       details: `Nyxsys Philippines successfully completed the supply,
         delivery, and installation of an indoor LED screen for
         Nissan BGC. This high-resolution display enhances the
@@ -106,15 +106,15 @@ export class BusinessSolutionsComponent implements OnInit {
       image: 'assets/images/business solutions/end to end/menu board.jpg'
     },
     {
-      text: 'Uniview Digital Window Display',
+      text: 'Digital Window Display',
       image: 'assets/images/business solutions/end to end/Uniview-digital-window-display.jpg'
     },
     {
-      text: 'Uniview Indoor Digital Signage (AL19900)',
+      text: 'Indoor Digital Signage (AL19900)',
       image: 'assets/images/business solutions/end to end/Uniview-indoor-digital-signage-AL1900.jpg'
     },
     {
-      text: 'Uniview Video Wall',
+      text: 'Video Wall',
       image: 'assets/images/business solutions/end to end/Uniview-Video-wall.jpg'
     },
   ]

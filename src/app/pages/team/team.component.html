@@ -19,14 +19,7 @@
             <p>Bringing expertise and collaboration together to drive meaningful innovation.</p>
             <div class="row g-3 w-100 mt-3">
                 @for (item of [ 1, 2, 3, 4, 5, 6 ]; track $index) {
-                    <div 
-                        class="col-12 col-md-6"
-                        [ngClass]="{
-                            'col-lg-3': [1, 6].includes(item),
-                            'col-lg-4': [3, 4].includes(item),
-                            'col-lg-5': [2, 5].includes(item),
-                        }"
-                    >
+                    <div class="col-12 col-md-6">
                         <div class="team-list-content">
                             <img [src]="'assets/images/team/' + item + '.jpg'" [alt]="item + '.jpg'">
                         </div>
