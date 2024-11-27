@@ -268,41 +268,24 @@ h3 {
     color: #fafafa;
     background-color: #002868;
 
-    .post-service-container {
+    .post-service-list {
         display: flex;
-        flex-direction: row;
-        margin: 5% 0;
-        gap: 32px;
-        height: 100%;
+        flex-direction: column;
 
-        .post-service-list {
-            display: flex;
-            flex-direction: column;
-
-            .post-service-item {
-                border-radius: 8px;
-                min-width: 200px;
-                overflow: hidden;
-                margin-bottom: 32px;
-        
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-                    
-                & img {
-                    transition: transform 0.7s ease;
-                }
+        .post-service-item {
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 32px;
     
-                &:hover img {
-                    transform: scale(1.2);
-                }
+            img {
+                width: 100%;
+                height: auto;
             }
+        }
 
-            .post-service-text h4 {
-                font-weight: 600;
-                font-size: 1.05rem !important;
-            }
+        .post-service-text h4 {
+            font-weight: 600;
+            font-size: 1.05rem !important;
         }
     }
 }

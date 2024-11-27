@@ -42,6 +42,28 @@
                 }
             }
         }
+        
+
+        .driving-force-list {
+            display: flex;
+            flex-direction: column;
+
+            .driving-force-item {
+                border-radius: 8px;
+                overflow: hidden;
+                margin-bottom: 32px;
+        
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .driving-force-text h4 {
+                font-weight: 600;
+                font-size: 1.05rem !important;
+            }
+        }
     }
 }
 

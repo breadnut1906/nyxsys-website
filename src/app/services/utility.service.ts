@@ -10,25 +10,25 @@ export class UtilityService {
   services: any[] = [
     {
       title: 'LED MEDIA INVENTORIES',
-      description: 'Comprehensive collection of highperformance LED display systems designed to meet diverse marketing and advertising needs.',
+      description: 'High-performance LED displays delivering unmatched quality and versatility for all your marketing and advertising needs.',
       image: 'assets/images/led/led-services.png',
       routerLink: '/services/led-media-inventories'
     },
     {
       title: 'STATIC FIXED INVENTORIES',
-      description: `Range of non-digital, high-quality static advertising solutions that are designed to deliver long-lasting, impactful brand messaging.`,
+      description: `Durable, high-quality static advertising solutions designed to deliver impactful, long-lasting brand messaging in high-traffic areas.`,
       image: 'assets/images/static/edsa northbound static billboard.jpg',
       routerLink: '/services/static-fixed-inventories'
     },
     {
       title: 'BUSINESS INNOVATIVE SOLUTIONS & SERVICES',
-      description: `Deliver dynamic, high-definition displays tailored for impactful advertising and realtime content updates across various industries.`,
+      description: `Dynamic, high-definition displays designed for impactful advertising, real-time updates, and seamless engagement across diverse industries.`,
       image: 'assets/images/business solutions/globe.jpg',
       routerLink: '/services/business-innovative-solutions'
     },
     {
       title: 'AUDIENCE MEASUREMENT',
-      description: `Advanced data and analytics platform that empowers businesses with actionable insights derived from real-time data monitoring and analysis.`,
+      description: `An advanced data platform that transforms real-time monitoring into actionable insights, empowering businesses to optimize operations and drive growth.`,
       image: 'assets/images/audience measurement/indoor/indoor mall audience measurement 1.png',
       routerLink: '/services/audience-measurement'
     }

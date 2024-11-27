@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
 import { ComponentsModule } from '../../modules/components/components.module';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { GraphsComponent } from "../../components/graphs/graphs.component";
 
 @Component({
   selector: 'app-audience-measurement',
   standalone: true,
-  imports: [ MaterialUiModule, ComponentsModule ],
+  imports: [MaterialUiModule, ComponentsModule, GraphsComponent],
   templateUrl: './audience-measurement.component.html',
   styleUrl: './audience-measurement.component.scss',
   animations: [
@@ -19,12 +20,12 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class AudienceMeasurementComponent implements OnInit {
 
-  isVisible: boolean[] = [ false, false ];
+  isVisible: boolean[] = [false, false];
 
   ngOnInit(): void {
-    const elements = document.querySelectorAll('.audience-item');      
-    
-    elements.forEach((element, index) => {  
+    const elements = document.querySelectorAll('.audience-item');
+
+    elements.forEach((element, index) => {
       setTimeout(() => (this.isVisible[index] = true), index * 300);
     });
   }

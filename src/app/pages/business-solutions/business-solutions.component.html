@@ -2,15 +2,25 @@
 
 <section class="section-container business-solution-section">
     <!-- <img class="business-solution-image" src="assets/images/cta.jpg" alt="business-solution" loading="lazy"> -->
-    <video [autoplay]="true" [muted]="true" [loop]="true" [playsInline]="true" class="business-solution-video" preload="auto">
+    <video [autoplay]="true" [muted]="true" [loop]="true" [playsInline]="true" class="business-solution-video"
+        preload="auto">
         <source src="assets/videos/business-solutions.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div class="business-solution-container">
         <div class="business-solution-wrapper">
-            <h1 class="business-solution-header business-solution-item" [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">Business Innovative Solutions & Services</h1>
-            <p class="business-solution-subheader business-solution-item" [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
-                Empowering your business with innovative solutions and services that drive growth and efficiency.
+            <h1 class="business-solution-header business-solution-item"
+                [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">Business Innovative Solutions & Services</h1>
+            <p class="business-solution-subheader business-solution-item"
+                [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
+                Empowering your business with a suite of innovative solutions and services designed to drive growth,
+                enhance efficiency,
+                and create a competitive edge. From cutting-edge technologies to tailored strategies, we provide the
+                tools and expertise
+                needed to streamline operations, unlock new opportunities, and achieve sustainable success. Whether
+                you’re looking to optimize performance,
+                expand your reach, or adapt to evolving market demands, our forward-thinking approach ensures your
+                business stays ahead in an ever-changing landscape.
             </p>
         </div>
     </div>
@@ -20,21 +30,24 @@
     <div class="business-solution-container">
         <div class="business-solution-wrapper">
             <h2>Digital Signage Case Studies</h2>
-            <p>Real-world success stories showcasing impactful signage solutions across diverse industries.</p>
+            <p>Successful leveraging of business to achieve their various objectives. Utilizing enhanced customer
+                engagement and
+                even boosted operational efficiency on versatile platforms that deliver target, dynamic content that
+                drives lead generation and acquisition.</p>
             <div class="business-solution-carousel">
                 <div class="row g-3">
                     @for (item of caseStudies; track $index) {
-                        <div class="col-12 col-lg-6 col-xl-4">
-                            <div class="business-solution-item">
-                                <img [src]="item.image" [alt]="item.image">
-                                <div class="business-solution-item-overlay">
-                                    <div class="business-solution-item-text">
-                                        <h4>{{ item.text }}</h4>
-                                        <p>{{  item.details }}</p>
-                                    </div>
+                    <div class="col-12 col-lg-6 col-xl-4">
+                        <div class="business-solution-item">
+                            <img [src]="item.image" [alt]="item.image">
+                            <div class="business-solution-item-overlay">
+                                <div class="business-solution-item-text">
+                                    <h4>{{ item.text }}</h4>
+                                    <p>{{ item.details }}</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     }
                 </div>
             </div>
@@ -46,14 +59,14 @@
                     <h3>&mdash;Hardware</h3>
                     <div class="row g-5 mt-3">
                         @for (item of hardwares; track $index) {
-                            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="hardware-item">
-                                    <img [src]="item.image" [alt]="item.image">
-                                    <div class="hardware-text">
-                                        <p>{{ item.text }}</p>
-                                    </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+                            <div class="hardware-item">
+                                <img [src]="item.image" [alt]="item.image">
+                                <div class="hardware-text">
+                                    <p>{{ item.text }}</p>
                                 </div>
                             </div>
+                        </div>
                         }
                     </div>
                 </div>
@@ -62,9 +75,12 @@
                     <div class="vcastplay-description">
                         <h4>VCASTPLAY &copy;</h4>
                         <p>
-                            A cloud-based CMS for the DOOH industry, popular among major Philippine companies for indoor and 
-                            outdoor digital signage. Developed by NYXSYS PH, a leading advertising firm with 25 years of experience 
-                            since its spinoff from Mediapool. It also operates one of the largest LEDs in the Philippines, situated in a
+                            A cloud-based CMS for the DOOH industry, popular among major Philippine companies for indoor
+                            and
+                            outdoor digital signage. Developed by NYXSYS PH, a leading advertising firm with 25 years of
+                            experience
+                            since its spinoff from Mediapool. It also operates one of the largest LEDs in the
+                            Philippines, situated in a
                             prime location for both indoor and outdoor DOOH displays
                         </p>
                         <p>Take your business to the next level with vCastPlay,
@@ -84,21 +100,22 @@
                             <h4 class="my-4">Feature Benefits</h4>
                             <mat-accordion>
                                 @for (item of e2eSolutions; track $index) {
-                                    <mat-expansion-panel>
-                                        <mat-expansion-panel-header>
-                                            <mat-panel-title>
-                                                <img [src]="item.image" [alt]="item.text" loading="lazy" width="25">
-                                                <span class="mx-3 e2eTitle">{{ item.text }}</span>
-                                            </mat-panel-title>
-                                        </mat-expansion-panel-header>
-                                        <p>{{ item.details }}</p>
-                                    </mat-expansion-panel>
+                                <mat-expansion-panel>
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                            <img [src]="item.image" [alt]="item.text" loading="lazy" width="25">
+                                            <span class="mx-3 e2eTitle">{{ item.text }}</span>
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+                                    <p>{{ item.details }}</p>
+                                </mat-expansion-panel>
                                 }
                             </mat-accordion>
                         </div>
                         <div class="col-12 col-lg-6">
                             <div id="video-container" class="vcastplay-video">
-                                <video id="vcastplay" [controls]="true" [autoplay]="true" [loop]="true" [playsInline]="true" class="vcastplay-video" preload="auto">
+                                <video id="vcastplay" [controls]="true" [autoplay]="true" [loop]="true"
+                                    [playsInline]="true" class="vcastplay-video" preload="auto">
                                     <source src="assets/videos/vcastplay software video.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
@@ -116,8 +133,9 @@
         <div class="business-solution-wrapper">
             <h2>Digital Signage Post Services</h2>
             <h4>Content Management System</h4>
-            <div class="post-service-container">
+            <div class="row my-4 g-5">
                 @for (item of postServices; track $index) {
+                <div class="col-12 col-md-6">
                     <div class="post-service-list">
                         <div class="post-service-item">
                             <img [src]="item.image" [alt]="item.text">
@@ -127,26 +145,45 @@
                             <p>{{ item.details }}</p>
                         </div>
                     </div>
+                </div>
                 }
             </div>
             <hr>
             <div class="post-service-impact">
-                <h4>Outsourcing our services can have an impact on your P&L</h4>
-                <div class="row g-3 align-items-center flex-wrap-reverse">
-                    <div class="col-12 col-lg-6">
+                <div class="row g-5">
+                    <div class="col-12 col-md-6">
+                        <h4>Content Management</h4>
+                        <p>Fueled by advancements in technology, enhanced user experiences, and the growing integration
+                            of artificial intelligence and data analytics, NYXSYS will make your brand fully embrace the
+                            promising future of digital display management.
+                            NYXSYS will simplify the process and make it cost-effective together with our team of
+                            experts supporting you from setup to daily operations, ensuring your playlists and content
+                            are effortlessly managed with cutting-edge cloud tech.
+                            With NYXSYS, you can easily upload, manage, and schedule your media across unlimited screens
+                            from one central location and enjoy the operational costs savings.</p>
                         <div class="row g-3 mt-5">
-                            <app-number-counting class="col-12 col-md-6" [finalValue]="-30" subText="%" [title]="'OPEX Savings'"></app-number-counting>
-                            <app-number-counting class="col-12 col-md-6" [finalValue]="50" subText="%" [title]="'Gross Profit Impact'"></app-number-counting>
-                            <app-number-counting class="col-12 col-md-6" [finalValue]="20" subText="%" [title]="'Revenue Boost'"></app-number-counting>
-                            <app-number-counting class="col-12 col-md-6" [finalValue]="60" subText="hours" [title]="'Saved time per week'"></app-number-counting>
+                            <app-number-counting class="col-6" [finalValue]="-30" subText="%"
+                                [title]="'OPEX Savings'"></app-number-counting>
+                            <app-number-counting class="col-6" [finalValue]="50" subText="%"
+                                [title]="'Gross Profit Impact'"></app-number-counting>
+                            <app-number-counting class="col-6" [finalValue]="20" subText="%"
+                                [title]="'Revenue Boost'"></app-number-counting>
+                            <app-number-counting class="col-6" [finalValue]="60" subText="hours"
+                                [title]="'Saved time per week'"></app-number-counting>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <div id="video-container" class="post-service-video">
-                            <video id="vcastplay" [controls]="true" [autoplay]="true" [loop]="true" [playsInline]="true" class="vcastplay-video" preload="auto">
-                                <source src="assets/videos/digital signage.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                    <div class="col-12 col-md-6">
+                        <h4>Outsourcing our services can have an impact on your P&L</h4>
+                        <div class="row g-3 align-items-center">
+                            <div class="col-12">
+                                <div id="video-container" class="post-service-video">
+                                    <video id="vcastplay" [controls]="true" [autoplay]="true" [loop]="true"
+                                        [playsInline]="true" class="vcastplay-video" preload="auto">
+                                        <source src="assets/videos/digital signage.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
