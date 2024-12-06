@@ -6,19 +6,19 @@
                     <img src="assets/images/logo white.png" alt="logo white.png" class="logo" loading="lazy">
                     <div class="footer-socials">
                         @for (item of socialLinks; track $index) {
-                            <a [href]="item.url" target="_blank" rel="noopener noreferrer">
-                                <img [src]="'assets/icons/' + item.icon + '.png'" [alt]="item.icon">
-                            </a>
+                        <a [href]="item.url" target="_blank" rel="noopener noreferrer">
+                            <img [src]="'assets/icons/' + item.icon + '.png'" [alt]="item.icon">
+                        </a>
                         }
                     </div>
                 </div>
                 <div class="col-12 col-lg-3">
                     <h3>Quick Links</h3>
                     <ul class="footer-quick-links">
-                        <li><a routerLink="/">Home</a></li>
-                        <li><a routerLink="/services">Services</a></li>
-                        <li><a routerLink="/about">About</a></li>
-                        <li><a routerLink="/team">Team</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/team">Team</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-3">
@@ -45,9 +45,9 @@
                     <p>&copy; 2024 Nyxsys Philippines, Inc. All rights reserved.</p>
                 </div>
                 <div class="col-12 col-lg-3">
-                    <a [routerLink]="'/privacy-policy'">Privacy Policy</a>
+                    <a [href]="'/privacy-policy'">Privacy Policy</a>
                     <span class="dot-separator">•</span>
-                    <a [routerLink]="'/terms'">Terms of Service</a>
+                    <a [href]="'/terms'">Terms of Service</a>
                 </div>
             </div>
         </div>

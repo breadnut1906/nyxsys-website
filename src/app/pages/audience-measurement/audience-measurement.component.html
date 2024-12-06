@@ -12,14 +12,10 @@
                 Audience Measurement Enabled by Calton Datx
             </h1>
             <p class="audience-subheader audience-item" [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
-                Unlock the transformative power of data-driven insights to understand your audience on a deeper level.
-                With our tools and advanced analytics, you can capture real-time engagement metrics, uncover behavioral
-                patterns,
-                and gain a comprehensive view of your audience's preferences and actions. This empowers you to create
-                highly targeted
-                campaigns that resonate with precision, driving stronger connections and measurable results. By
-                leveraging these insights,
-                you can optimize strategies, enhance campaign effectiveness, and stay ahead in a data-driven world.
+                Unlock the power of data-driven insights to better understand your audience. Our advanced analytics
+                capture real-time engagement, uncover behavioral patterns, and reveal audience preferences, enabling
+                highly targeted campaigns. Optimize strategies, enhance effectiveness, and stay ahead in a data-driven
+                world.
             </p>
         </div>
     </div>
@@ -64,7 +60,8 @@
     <div class="indoor-outdoor-container">
         <div class="indoor-outdoor-wrapper">
             <h2>Indoor Mall Audience Measurement</h2>
-            <p>Discover better understanding of customer patterns, preferences, and interactions within the mall. By
+            <p class="mt-2">Discover better understanding of customer patterns, preferences, and interactions within the
+                mall. By
                 analyzing foot traffic, dwell times, and
                 engagement with different areas, mall owners, tenants, and marketers can better understand customer
                 patterns. The result is a more efficient,
@@ -72,19 +69,17 @@
                 stronger brand loyalty and growth for both retailers
                 and the mall.</p>
             <div class="row g-3 mt-3">
-                <!-- <div class="col-12">
-                    <div class="indoor-outdoor-content">
-                        <video id="vcastplay" [autoplay]="true" [muted]="true" [loop]="true" preload="auto">
-                            <source src="assets/videos/face tracking.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div> -->
-                <div class="row col-12">
+                <div class="row g-3 col-12 align-items-center justify-content-center">
                     <div class="col-12 col-md-6">
-                        <div class="indoor-outdoor-content">
-                            <img src="assets/images/audience measurement/indoor/image1.png"
-                                alt="indoor mall audience measurement" loading="lazy">
+                        <div class="indoor-outdoor-content m-3">
+                            <ngx-slick-carousel [config]="slideConfig">
+                                @for (item of [1, 2, 3]; track $index) {
+                                <div ngxSlickItem>
+                                    <img [src]="'assets/images/audience measurement/indoor/image' + item + '.png'"
+                                        alt="indoor mall audience measurement" loading="lazy">
+                                </div>
+                                }
+                            </ngx-slick-carousel>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">

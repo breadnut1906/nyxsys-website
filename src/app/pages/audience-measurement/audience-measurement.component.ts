@@ -22,6 +22,14 @@ export class AudienceMeasurementComponent implements OnInit {
 
   isVisible: boolean[] = [false, false];
 
+  slideConfig = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+  };
+
   ngOnInit(): void {
     const elements = document.querySelectorAll('.audience-item');
 

@@ -1,13 +1,12 @@
 import { Component, HostListener, inject } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { MaterialUiModule } from '../../modules/material-ui/material-ui.module';
-import { RouterLink } from '@angular/router';
 import { UtilityService } from '../../services/utility.service';
 
 @Component({
   selector: 'app-services-section',
   standalone: true,
-  imports: [ MaterialUiModule, RouterLink ],
+  imports: [MaterialUiModule],
   templateUrl: './services-section.component.html',
   styleUrl: './services-section.component.scss',
   animations: [
@@ -18,20 +17,20 @@ import { UtilityService } from '../../services/utility.service';
       // transition('visible => hidden', animate('600ms ease-in')),
     ]),
   ],
-  providers: [ UtilityService ]
+  providers: [UtilityService]
 })
 export class ServicesSectionComponent {
 
   utility = inject(UtilityService);
-  isVisible: boolean[] = [ false, false, false, false ];
+  isVisible: boolean[] = [false, false, false, false];
 
   services: any[] = this.utility.services;
-  
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const elements = document.querySelectorAll('.service-item');      
-    
-    elements.forEach((element, index) => {  
+    const elements = document.querySelectorAll('.service-item');
+
+    elements.forEach((element, index) => {
       const rect = element.getBoundingClientRect();
       const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 

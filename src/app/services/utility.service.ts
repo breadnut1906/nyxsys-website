@@ -21,7 +21,7 @@ export class UtilityService {
       routerLink: '/services/static-fixed-inventories'
     },
     {
-      title: 'BUSINESS INNOVATIVE SOLUTIONS & SERVICES',
+      title: 'DIGITAL B2B SERVICES',
       description: `Dynamic, high-definition displays designed for impactful advertising, real-time updates, and seamless engagement across diverse industries.`,
       image: 'assets/images/business solutions/globe.jpg',
       routerLink: '/services/business-innovative-solutions'
@@ -35,11 +35,11 @@ export class UtilityService {
   ]
 
   constructor(private breakPointObserver: BreakpointObserver) { }
-  
+
   isMobile(destroyed: Subject<void>): Observable<boolean> {
     return new Observable<boolean>((observer) => {
       this.breakPointObserver
-        .observe([ Breakpoints.XSmall, Breakpoints.Small ])
+        .observe([Breakpoints.XSmall, Breakpoints.Small])
         .pipe(takeUntil(destroyed))
         .subscribe((result) => {
           for (const query of Object.keys(result.breakpoints)) {
@@ -49,7 +49,7 @@ export class UtilityService {
             }
           }
           observer.next(false);
-      });
+        });
     });
   }
 }

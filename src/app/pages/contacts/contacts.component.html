@@ -73,12 +73,12 @@
                         <p>{{ phone }}</p>
                     </div>
                 </div>
-                
+
                 <div class="socials">
                     @for (item of socialLinks; track $index) {
-                        <a [routerLink]="item.url" target="_blank" rel="noopener noreferrer">
-                            <img [src]="'assets/icons/' + item.icon + '.png'" [alt]="item.icon">
-                        </a>
+                    <a [href]="item.url" target="_blank" rel="noopener noreferrer">
+                        <img [src]="'assets/icons/' + item.icon + '.png'" [alt]="item.icon">
+                    </a>
                     }
                 </div>
             </div>

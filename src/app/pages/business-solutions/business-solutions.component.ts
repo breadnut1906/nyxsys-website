@@ -7,7 +7,7 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-business-solutions',
   standalone: true,
-  imports: [ MaterialUiModule, ComponentsModule ],
+  imports: [MaterialUiModule, ComponentsModule],
   templateUrl: './business-solutions.component.html',
   styleUrl: './business-solutions.component.scss',
   animations: [
@@ -23,10 +23,10 @@ export class BusinessSolutionsComponent implements OnInit {
   @ViewChild(SlickCarouselComponent) slickModalCaseStudies!: SlickCarouselComponent;
 
   isVcastPlaying: boolean = false;
-  isVisible: boolean[] = [ false, false ];
+  isVisible: boolean[] = [false, false];
 
   caseStudies: any[] = [
-    { 
+    {
       text: 'Globe Telecom',
       details: `Nyxsys Philippines provided Globe with a complete digital
         signage solution, from installing high-definition screens
@@ -37,27 +37,7 @@ export class BusinessSolutionsComponent implements OnInit {
         Nyxsys' advanced technology.`,
       image: 'assets/images/business solutions/case studies/globe.jpg'
     },
-    { 
-      text: 'DHL Warehouse',
-      details: `Nyxsys Philippines constructed a massive LED display
-        for DHL. The prominent screen, showcasing DHL’s
-        signature yellow and red colors, became a striking
-        symbol of the brand’s global presence and reliability,
-        enhancing its visibility and impact.`,
-      image: 'assets/images/business solutions/case studies/dhl.jpg'
-    },
-    { 
-      text: 'ST. Lukes Medical',
-      details: `Nyxsys Philippines successfully supplied, delivered, and
-        installed Posterboxes at St. Luke’s Medical Center. These
-        high-quality displays provide clear and vibrant visuals,
-        enhancing communication and wayfinding within the
-        hospital. The seamless installation reflects Nyxsys'
-        commitment to delivering reliable, cutting-edge
-        solutions tailored to client needs.`,
-      image: 'assets/images/business solutions/case studies/st lukes.jpg'
-    },
-    { 
+    {
       text: 'Dunkin Menu Boards',
       details: `Nyxsys Philippines facilitated the supply and delivery of
         Vcastplay for Dunkin', enhancing their in-store digital
@@ -69,55 +49,7 @@ export class BusinessSolutionsComponent implements OnInit {
         presence while enhancing the customer experience.`,
       image: 'assets/images/business solutions/case studies/dunkin.jpg'
     },
-    { 
-      text: 'Nissan Dealer Showroom',
-      details: `Nyxsys Philippines successfully completed the supply,
-        delivery, and installation of an indoor LED screen for
-        Nissan BGC. This high-resolution display enhances the
-        showroom experience, showcasing Nissan's latest
-        models and promotions with vibrant visuals. The
-        seamless integration of the LED screen reflects Nyxsys'
-        expertise in delivering state-of-the-art digital signage
-        solutions, elevating Nissan BGC's brand presence and
-        customer engagement.`,
-      image: 'assets/images/business solutions/case studies/nissan.jpg'
-    },
-    { 
-      text: 'Japan Town Ayala Vertis North',
-      details: `Nyxsys Philippines, Inc. successfully handled the Supply,
-        Delivery, and Installation of an Indoor LED Screen at
-        Japan Town, Ayala Vertis North. The vibrant screen
-        seamlessly enhances the space, displaying highquality visuals and interactive media, elevating the
-        shopping and dining experience for visitors. Nyxsys’
-        expertise in cutting-edge digital signage made this
-        installation a standout feature, blending modern
-        technology with the sleek design of Japan Town.`,
-      image: 'assets/images/business solutions/case studies/japan town ayala vertis north.jpg'
-    },
   ];
-
-  hardwares: any[] = [
-    {
-      text: 'Indoor Interactive Touch KIOSK (IK140)',
-      image: 'assets/images/business solutions/end to end/INDOOR-INTERACTIVE-TOUCH-KIOSK-IK140.jpg'
-    },
-    {
-      text: 'Menu Board',
-      image: 'assets/images/business solutions/end to end/menu board.jpg'
-    },
-    {
-      text: 'Digital Window Display',
-      image: 'assets/images/business solutions/end to end/Uniview-digital-window-display.jpg'
-    },
-    {
-      text: 'Indoor Digital Signage (AL19900)',
-      image: 'assets/images/business solutions/end to end/Uniview-indoor-digital-signage-AL1900.jpg'
-    },
-    {
-      text: 'Video Wall',
-      image: 'assets/images/business solutions/end to end/Uniview-Video-wall.jpg'
-    },
-  ]
 
   e2eSolutions: any[] = [
     {
@@ -169,15 +101,15 @@ export class BusinessSolutionsComponent implements OnInit {
       image: 'assets/images/business solutions/post services/247 helpdesk.jpg'
     },
   ]
-  
-  config: any = { 
-    dots: false, 
+
+  config: any = {
+    dots: false,
     arrows: false,
     autoPlay: true,
     speed: 2000,
     slidesToShow: 2,
     slidesToScroll: 1,
-    infinite: true, 
+    infinite: true,
     centerMode: true,
     centerPadding: '60px',
     responsive: [
@@ -199,13 +131,13 @@ export class BusinessSolutionsComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    const elements = document.querySelectorAll('.business-solution-item');      
-    
-    elements.forEach((element, index) => {  
+    const elements = document.querySelectorAll('.business-solution-item');
+
+    elements.forEach((element, index) => {
       setTimeout(() => (this.isVisible[index] = true), index * 300);
     });
   }
-  
+
   onClickPrev() {
     this.slickModalCaseStudies.slickPrev();
   }
