@@ -102,6 +102,15 @@ export class BusinessSolutionsComponent implements OnInit {
     },
   ]
 
+  b2bIndustries: any[] = [
+    { text: 'Retail', image: 'assets/images/business solutions/b2bindustries/retail.jpg' },
+    { text: 'Hospitality', image: 'assets/images/business solutions/b2bindustries/hospitality.jpg' },
+    { text: 'Transport Hub', image: 'assets/images/business solutions/b2bindustries/transport hub.jpg' },
+    { text: 'Health Care', image: 'assets/images/business solutions/b2bindustries/healthcare.jpg' },
+    { text: 'Education', image: 'assets/images/business solutions/b2bindustries/education.jpg' },
+    { text: 'Food Services', image: 'assets/images/business solutions/b2bindustries/food services.jpg' },
+  ]
+
   config: any = {
     dots: false,
     arrows: false,

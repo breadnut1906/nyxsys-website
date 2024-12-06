@@ -37,7 +37,7 @@
             }
 
             .hero-header {
-                font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+                font-size: clamp(0.8rem, 5vw + 1rem, 4rem);
                 /* Responsive font size */
                 font-weight: bold;
                 line-height: 1.1em;
@@ -52,7 +52,7 @@
             }
 
             .hero-subheader {
-                font-size: clamp(1.05rem, 2.25vw + 0.5rem, 1rem);
+                font-size: clamp(0.7rem, 2.25vw + 0.5rem, 1rem);
                 /* Responsive font size */
                 font-weight: 400;
                 margin-top: 1.05rem;

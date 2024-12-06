@@ -164,6 +164,18 @@
     <div class="business-solution-container">
         <div class="business-solution-wrapper">
             <h2>B2B Industries</h2>
+            <div class="row g-3 mt-4">
+                @for (item of b2bIndustries; track $index) {
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="b2b-industries">
+                        <img [src]="item.image" [alt]="item.text" loading="lazy">
+                        <div class="b2b-industries-text">
+                            <h3>{{ item.text }}</h3>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
         </div>
     </div>
 </section>

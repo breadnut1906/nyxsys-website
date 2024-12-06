@@ -40,7 +40,7 @@ h2 {
 
             .static-header {
                 font-family: 'Poppins', Arial, sans-serif !important;
-                font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+                font-size: clamp(0.8rem, 5vw + 1rem, 4rem);
                 /* Responsive font size */
                 font-weight: bold;
                 line-height: 1.2;
@@ -51,7 +51,7 @@ h2 {
             }
 
             .static-subheader {
-                font-size: clamp(1.05rem, 2.25vw + 0.5rem, 1rem);
+                font-size: clamp(0.7rem, 2.25vw + 0.5rem, 1rem);
                 /* Responsive font size */
                 font-weight: 400;
                 line-height: 1.5;
@@ -154,7 +154,7 @@ h2 {
 @media (max-width: 767px) {
 
     .static-section {
-        height: 80vh;
+        height: 100vh;
     }
 
     h2 {
@@ -166,7 +166,7 @@ h2 {
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .static-section {
-        height: 80vh;
+        height: 100vh;
     }
 
     h2 {
