@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <app-graphs class="indoor-outdoor-wrapper"></app-graphs>
+        <app-graphs class="indoor-outdoor-wrapper" [carouselItemList]="indoorAudienceMeasurement"></app-graphs>
 
 
         <div class="indoor-outdoor-wrapper">
@@ -125,11 +125,13 @@
                 </div>
             </div>
         </div>
+
+        <app-graphs class="indoor-outdoor-wrapper" [carouselItemList]="outdoorAudienceMeasurement"></app-graphs>
     </div>
 </section>
 
-<app-see-more-services-section></app-see-more-services-section>
-
 <app-testimonials></app-testimonials>
+
+<app-see-more-services-section></app-see-more-services-section>
 
 <app-footer></app-footer>

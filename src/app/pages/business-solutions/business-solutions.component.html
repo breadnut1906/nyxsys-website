@@ -10,7 +10,7 @@
     <div class="business-solution-container">
         <div class="business-solution-wrapper">
             <h1 class="business-solution-header business-solution-item"
-                [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">Digital B2B Services</h1>
+                [@slideIn]="isVisible[0] ? 'visible' : 'hidden'">Digital Display Management Services</h1>
             <p class="business-solution-subheader business-solution-item"
                 [@slideIn]="isVisible[1] ? 'visible' : 'hidden'">
                 We empower your business with innovative business-to-business solutions to drive growth, enhance
@@ -31,26 +31,19 @@
             <h2>VCastplay</h2>
             <div class="vcastplay-info">
                 <div class="vcastplay-description">
-                    <p>
-                        A cloud-based CMS for the DOOH industry, popular among major Philippine companies for indoor
-                        and
-                        outdoor digital signage. Developed by NYXSYS PH, a leading advertising firm with 25 years of
-                        experience
-                        since its spinoff from Mediapool. It also operates one of the largest LEDs in the
-                        Philippines, situated in a
-                        prime location for both indoor and outdoor DOOH displays
+                    <p>A cloud-based CMS for the DOOH industry, popular among major Philippine companies for indoor and
+                        outdoor digital signage. Developed by Nyxsys Philippines, Inc., a leading advertising firm with
+                        25 years of experience since its spinoff from Mediapool. It also operates one of the largest
+                        LEDs in the Philippines, situated in a prime location for both indoor and outdoor DOOH displays.
+                        Digital Signage Software is applicable for all verticals engaged in using digital screen
+                        displays in OOH advertising, retail, and more.</p>
+                    <p>Take your business to the next level with vcastplay, the intelligent, cloud-powered solution
+                        designed to deliver organized, engaging digital ad content. Seamlessly tailored for your
+                        business needs, vcastplay makes managing your digital signage effortless.
                     </p>
-                    <p>Take your business to the next level with vCastPlay,
-                        the intelligent, cloud-powered solution designed to
-                        deliver organized, engaging digital ad content.
-                        Seamlessly tailored for your business needs,
-                        vCastPlay makes managing your digital signage
-                        effortless.
-                    </p>
-                    <p>With its user-friendly interface, vCastPlay helps boost
-                        your sales and transform how your audience
-                        experiences your brand. Elevate your marketing
-                        strategy with this cutting-edge advertising tool!</p>
+                    <p>With its user-friendly interface, vcastplay helps boost your sales and transform how your
+                        audience experiences your brand. Elevate your marketing strategy with this cutting-edge
+                        advertising tool! </p>
                 </div>
                 <div class="row g-3 align-items-center flex-wrap-reverse">
                     <div class="col-12 col-lg-6 m-0">
@@ -82,11 +75,19 @@
             </div>
         </div>
         <div class="mt-5">
-            <h2>B2B Services Case Studies</h2>
-            <p>Successful leveraging of business to achieve their various objectives. Utilizing enhanced customer
-                engagement and
-                even boosted operational efficiency on versatile platforms that deliver target, dynamic content that
-                drives lead generation and acquisition.</p>
+            <h2>Digital Signage B2B Case Studies</h2>
+            <p class="mt-5">Successful businesses leverage digital signage to achieve various objectives, enhancing
+                customer
+                engagement and improving operational efficiency. These versatile platforms deliver dynamic, targeted
+                content that captures attention and drives meaningful interactions, supporting lead generation and
+                acquisition. This approach ensures the right message reaches the right audience, boosting brand
+                visibility and business growth. By streamlining operations and automating content delivery, businesses
+                stay agile and competitive.
+            </p>
+            <p>Outsourcing content management, charting, and digital content creation allows companies to focus on core
+                operations while ensuring high-quality, professional content. These services offer expertise in creating
+                compelling visual experiences and managing content flow, maximizing the impact of digital signage
+                campaigns. </p>
             <div class="business-solution-carousel">
                 <div class="row g-3">
                     @for (item of caseStudies; track $index) {
@@ -139,16 +140,20 @@
                     </div>
                 </div>
             </div>
-            <div class="row my-4 g-5">
+            <div class="row justify-content-center my-4 g-5">
                 @for (item of postServices; track $index) {
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="post-service-list">
                         <div class="post-service-item">
-                            <img [src]="item.image" [alt]="item.text">
+                            <img [src]="item.image" [alt]="item.text" loading="lazy">
                         </div>
                         <div class="post-service-text">
                             <h4>{{ item.text }}</h4>
                             <p>{{ item.details }}</p>
+                            @if (item.link) {
+                            <p>For more details, visit <a [href]="item.link" target="_blank">vCastPlay's packages
+                                    page.</a></p>
+                            }
                         </div>
                     </div>
                 </div>
@@ -163,7 +168,7 @@
 <section class="section-container b2b-industries-section">
     <div class="business-solution-container">
         <div class="business-solution-wrapper">
-            <h2>B2B Industries</h2>
+            <h2>B2B Verticals</h2>
             <p>Nyxsys Philippines is a leading provider of innovative and customizable software solutions, catering to a
                 wide range of B2B industries. The company focuses on delivering cutting-edge technology that helps
                 businesses optimize operations, enhance customer experiences, and drive growth. With expertise in
@@ -174,7 +179,7 @@
                 functions. By prioritizing customer satisfaction and operational excellence, Nyxsys has become a trusted
                 partner for businesses looking to modernize and scale their operations in today’s competitive market.
             </p>
-            <div class="row g-3 mt-4">
+            <div class="row justify-content-center g-3 mt-4">
                 @for (item of b2bIndustries; track $index) {
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="b2b-industries">

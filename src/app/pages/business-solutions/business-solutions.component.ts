@@ -80,10 +80,41 @@ export class BusinessSolutionsComponent implements OnInit {
   ];
 
   postServices: any[] = [
+    // {
+    //   text: 'Content Playlist Management',
+    //   details: `We ensure that your digital signage always displays the latest audiovisual content by providing real-time updates, keeping your messaging fresh and relevant. With seamless playlist management, you can easily schedule, update, and customize content to engage your audience and meet your marketing goals effortlessly.`,
+    //   image: 'assets/images/business solutions/post services/playlist uploading.jpg'
+    // },
+    // {
+    //   text: 'Helpdesk Support',
+    //   details: `Customer support service available 24 hours a day, 7 days a week, without any interruptions. This means that users or customers can access assistance or resolve issues at any time, including nights, weekends, and holidays. It ensures continuous support for resolving technical problems, answering queries, or providing guidance whenever needed.`,
+    //   image: 'assets/images/business solutions/post services/247 helpdesk.jpg'
+    // },
+    // {
+    //   text: 'Social Media Content Management',
+    //   details: `We provide comprehensive social media creative services to enhance your brand's online presence and build strong connections with your audience. From initial ideas to the final design, we create visually captivating content and powerful messages tailored to grab your audience's attention and boost engagement. Let our team support you in amplifying your social media presence with unique and impactful creative that resonates.`,
+    //   image: 'assets/images/business solutions/post services/social media content management.jpg'
+    // },
+    // {
+    //   text: 'Creative Content Creation',
+    //   details: 'Creates original, superior design and content to help businesses stand out, communicate clearly, and engage with their target consumers. To enable organizations to create aesthetically beautiful, strategically matched content that appeals to their target market and propels business growth.',
+    //   image: 'assets/images/business solutions/post services/creative creation.jpg'
+    // },
     {
-      text: 'Content Playlist Management',
+      text: 'Software Subscription of vcastplay',
+      details: `vcastplay offers flexible subscription options, including a Free Trial for 15 days with 5GB cloud storage, and the Cloud Subscription, which provides a per-player license, 1GB cloud storage, unlimited playlists, and custom templates. For businesses requiring more robust storage, the On-Premises package offers a lifetime license, up to 2TB of server storage, and similar features. All packages include email support and useful reports, providing scalable solutions for digital signage needs.`,
+      image: 'assets/images/business solutions/post services/vcastplay subscription.png',
+      link: 'https://vcastplay.com/packages',
+    },
+    {
+      text: 'Content Playlist & Charting Management',
       details: `We ensure that your digital signage always displays the latest audiovisual content by providing real-time updates, keeping your messaging fresh and relevant. With seamless playlist management, you can easily schedule, update, and customize content to engage your audience and meet your marketing goals effortlessly.`,
       image: 'assets/images/business solutions/post services/playlist uploading.jpg'
+    },
+    {
+      text: 'Creative Content Creation',
+      details: 'Creates original, superior design and content to help businesses stand out, communicate clearly, and engage with their target consumers. To enable organizations to create aesthetically beautiful, strategically matched content that appeals to their target market and propels business growth.',
+      image: 'assets/images/business solutions/post services/creative creation.jpg'
     },
     {
       text: 'Helpdesk Support',
@@ -91,14 +122,9 @@ export class BusinessSolutionsComponent implements OnInit {
       image: 'assets/images/business solutions/post services/247 helpdesk.jpg'
     },
     {
-      text: 'Social Media Content Management',
-      details: `We provide comprehensive social media creative services to enhance your brand's online presence and build strong connections with your audience. From initial ideas to the final design, we create visually captivating content and powerful messages tailored to grab your audience's attention and boost engagement. Let our team support you in amplifying your social media presence with unique and impactful creative that resonates.`,
-      image: 'assets/images/business solutions/post services/social media content management.jpg'
-    },
-    {
-      text: 'Creative Content Creation',
-      details: 'Creates original, superior design and content to help businesses stand out, communicate clearly, and engage with their target consumers. To enable organizations to create aesthetically beautiful, strategically matched content that appeals to their target market and propels business growth.',
-      image: 'assets/images/business solutions/post services/creative creation.jpg'
+      text: 'Audience Measurement Report',
+      details: `Empowers businesses with real-time insights into audience behavior and demographics, utilizing advanced video analytics to track foot traffic, engagement levels, and profiles such as age and gender. This data-driven approach optimizes marketing strategies, enhances Digital Out-of-Home (DOOH) campaigns, improves retail layouts, and provides valuable event analytics. By delivering interactive reports and actionable insights, Nyxsys helps businesses maximize ROI, strengthen audience connections, and stay ahead in a competitive market.`,
+      image: 'assets/images/business solutions/post services/audience measurement report.png'
     },
   ]
 
@@ -109,6 +135,7 @@ export class BusinessSolutionsComponent implements OnInit {
     { text: 'Health Care', image: 'assets/images/business solutions/b2bindustries/healthcare.jpg' },
     { text: 'Education', image: 'assets/images/business solutions/b2bindustries/education.jpg' },
     { text: 'Food Services', image: 'assets/images/business solutions/b2bindustries/food services.jpg' },
+    { text: 'Digital Media Owners', image: 'assets/images/business solutions/b2bindustries/digital media owners.png' },
   ]
 
   config: any = {

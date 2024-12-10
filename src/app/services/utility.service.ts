@@ -21,10 +21,10 @@ export class UtilityService {
       routerLink: '/services/static-fixed-inventories'
     },
     {
-      title: 'DIGITAL B2B SERVICES',
+      title: 'DIGITAL DISPLAY MANAGEMENT SERVICES',
       description: `Dynamic, high-definition displays designed for impactful advertising, real-time updates, and seamless engagement across diverse industries.`,
       image: 'assets/images/business solutions/globe.jpg',
-      routerLink: '/services/digital-b2b-services'
+      routerLink: '/services/digital-display-management-services'
     },
     {
       title: 'AUDIENCE MEASUREMENT',

@@ -33,8 +33,8 @@ export const routes: Routes = [
                 loadComponent: () => import('./pages/static/static.component').then(m => m.StaticComponent)
             },
             {
-                path: 'digital-b2b-services',
-                title: 'Digital B2B Services • NYXSYS Philippines, Inc.',
+                path: 'digital-display-management-services',
+                title: 'Digital Display Management Services • NYXSYS Philippines, Inc.',
                 loadComponent: () => import('./pages/business-solutions/business-solutions.component').then(m => m.BusinessSolutionsComponent)
             },
             {
