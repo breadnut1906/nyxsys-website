@@ -24,7 +24,7 @@ export class UtilityService {
       title: 'DIGITAL B2B SERVICES',
       description: `Dynamic, high-definition displays designed for impactful advertising, real-time updates, and seamless engagement across diverse industries.`,
       image: 'assets/images/business solutions/globe.jpg',
-      routerLink: '/services/business-innovative-solutions'
+      routerLink: '/services/digital-b2b-services'
     },
     {
       title: 'AUDIENCE MEASUREMENT',

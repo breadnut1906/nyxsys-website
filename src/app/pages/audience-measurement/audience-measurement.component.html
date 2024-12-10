@@ -1,7 +1,6 @@
 <app-navbar></app-navbar>
 
 <section class="section-container audience-section">
-    <!-- <img class="audience-image" src="assets/images/cta.jpg" alt="audience" loading="lazy"> -->
     <video [autoplay]="true" [muted]="true" [loop]="true" [playsInline]="true" class="audience-video" preload="auto">
         <source src="assets/videos/audience.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -73,7 +72,7 @@
                     <div class="col-12 col-md-6">
                         <div class="indoor-outdoor-content m-3">
                             <ngx-slick-carousel [config]="slideConfig">
-                                @for (item of [1, 2, 3]; track $index) {
+                                @for (item of [1, 2]; track $index) {
                                 <div ngxSlickItem>
                                     <img [src]="'assets/images/audience measurement/indoor/image' + item + '.png'"
                                         alt="indoor mall audience measurement" loading="lazy">
@@ -83,10 +82,6 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <!-- <div class="indoor-outdoor-content">
-                            <img src="assets/images/audience measurement/indoor/image1.png"
-                                alt="indoor mall audience measurement" loading="lazy">
-                        </div> -->
                         <h4>Data Analytics</h4>
                         <p>CaltonDatx, the AI-powered platform developed by Nyxsys Philippines, represents a
                             cutting-edge advancement in business intelligence and data-driven decision-making.
@@ -103,26 +98,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="col-12">
-                    <div class="indoor-outdoor-content">
-                        <img src="assets/images/audience measurement/indoor/indoor mall audience measurement 0.png" alt="indoor mall audience measurement" loading="lazy">
-                    </div>
-                </div> -->
-                <!-- <div class="col-12 col-md-6 col-lg-4">
-                    <div class="indoor-outdoor-content">
-                        <img src="assets/images/audience measurement/indoor/indoor mall audience measurement 2.png" alt="indoor mall audience measurement 2.png">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="indoor-outdoor-content">
-                        <img src="assets/images/audience measurement/indoor/indoor mall audience measurement 3.png" alt="indoor mall audience measurement 3.png">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="indoor-outdoor-content">
-                        <img src="assets/images/audience measurement/indoor/indoor mall audience measurement 4.png" alt="indoor mall audience measurement 4.png">
-                    </div>
-                </div> -->
             </div>
         </div>
 
@@ -148,27 +123,6 @@
                         </video>
                     </div>
                 </div>
-                <!-- <div class="col-12">
-                    <div class="indoor-outdoor-content">
-                        <img src="assets/images/audience measurement/outdoor/Vehicle Demographics Audience Measurement.png"
-                            alt="Vehicle Demographics audience measurement.png" loading="lazy">
-                    </div>
-                </div> -->
-                <!-- <div class="col-12 col-md-6 col-lg-4">
-                    <div class="indoor-outdoor-content">
-                        <img src="assets/images/audience measurement/outdoor/Vehicle Demographics audience measurement 2.png" alt="Vehicle Demographics audience measurement 2.png">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="indoor-outdoor-content">
-                        <img src="assets/images/audience measurement/outdoor/Vehicle Demographics audience measurement 3.png" alt="Vehicle Demographics audience measurement 3.png">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="indoor-outdoor-content">
-                        <img src="assets/images/audience measurement/outdoor/Vehicle Demographics audience measurement 4.png" alt="Vehicle Demographics audience measurement 4.png">
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>

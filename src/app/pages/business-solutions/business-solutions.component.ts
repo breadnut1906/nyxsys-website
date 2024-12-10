@@ -81,6 +81,16 @@ export class BusinessSolutionsComponent implements OnInit {
 
   postServices: any[] = [
     {
+      text: 'Content Playlist Management',
+      details: `We ensure that your digital signage always displays the latest audiovisual content by providing real-time updates, keeping your messaging fresh and relevant. With seamless playlist management, you can easily schedule, update, and customize content to engage your audience and meet your marketing goals effortlessly.`,
+      image: 'assets/images/business solutions/post services/playlist uploading.jpg'
+    },
+    {
+      text: 'Helpdesk Support',
+      details: `Customer support service available 24 hours a day, 7 days a week, without any interruptions. This means that users or customers can access assistance or resolve issues at any time, including nights, weekends, and holidays. It ensures continuous support for resolving technical problems, answering queries, or providing guidance whenever needed.`,
+      image: 'assets/images/business solutions/post services/247 helpdesk.jpg'
+    },
+    {
       text: 'Social Media Content Management',
       details: `We provide comprehensive social media creative services to enhance your brand's online presence and build strong connections with your audience. From initial ideas to the final design, we create visually captivating content and powerful messages tailored to grab your audience's attention and boost engagement. Let our team support you in amplifying your social media presence with unique and impactful creative that resonates.`,
       image: 'assets/images/business solutions/post services/social media content management.jpg'
@@ -89,16 +99,6 @@ export class BusinessSolutionsComponent implements OnInit {
       text: 'Creative Content Creation',
       details: 'Creates original, superior design and content to help businesses stand out, communicate clearly, and engage with their target consumers. To enable organizations to create aesthetically beautiful, strategically matched content that appeals to their target market and propels business growth.',
       image: 'assets/images/business solutions/post services/creative creation.jpg'
-    },
-    {
-      text: 'Content Playlist Management',
-      details: `We ensure that your digital signage always displays the latest audiovisual content by providing real-time updates, keeping your messaging fresh and relevant. With seamless playlist management, you can easily schedule, update, and customize content to engage your audience and meet your marketing goals effortlessly.`,
-      image: 'assets/images/business solutions/post services/playlist uploading.jpg'
-    },
-    {
-      text: '24/7 Helpdesk',
-      details: `Customer support service available 24 hours a day, 7 days a week, without any interruptions. This means that users or customers can access assistance or resolve issues at any time, including nights, weekends, and holidays. It ensures continuous support for resolving technical problems, answering queries, or providing guidance whenever needed.`,
-      image: 'assets/images/business solutions/post services/247 helpdesk.jpg'
     },
   ]
 
