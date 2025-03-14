@@ -81,5 +81,16 @@ export class BlogComponent {
       'description',
       "tay updated with the latest trends, strategies, and innovations in Digital Out-of-Home (DOOH) advertising. Explore expert insights and industry news with NYXSYS Philippines, Inc."
     )
+
+    this.onInitGetBlogPosts();
+  }
+
+  onInitGetBlogPosts() {
+    this.utils.getBlogPosts().subscribe({
+      next: (blogs: any) => {
+        console.log(blogs);
+        
+      }
+    })
   }
 }

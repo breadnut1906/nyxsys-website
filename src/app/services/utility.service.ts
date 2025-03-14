@@ -4,11 +4,15 @@ import { Observable, Subject, takeUntil } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { FormGroup } from '@angular/forms';
+import { environment } from '../../environments/environment.development';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UtilityService {
+
+  cmsURL: string = environment.cmsURL;
 
   services: any[] = [
     {
@@ -49,7 +53,8 @@ export class UtilityService {
     private breakPointObserver: BreakpointObserver,
     private meta: Meta,
     private title: Title,
-    private router: Router
+    private router: Router,
+    private http: HttpClient,
   ) { }
 
   isMobile(destroyed: Subject<void>): Observable<boolean> {
@@ -108,5 +113,12 @@ export class UtilityService {
     const mailToLink = `mailto:${emailAddress}?subject=Inquiry: Digital Out-of-Home Advertising Solutions&body=${encodeURIComponent(`Name: ${name}\nCompany: ${company}\nEmail: ${email}\nContact: ${contact}\nMessage: ${message}`)}`;
     window.open(mailToLink, '_blank');
     contactForm.reset();
+  }
+
+  getBlogPosts() {
+    const headers = new HttpHeaders({
+      'Accept': 'application/json'
+    });
+    return this.http.get(`https://nyxsys.ph/news_and_updates/wp-json/wp/v2/posts`);
   }
 }
